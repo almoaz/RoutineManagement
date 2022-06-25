@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/drawable-v24/bg_box.xml" value="0.1805" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/drawable-v24/bg_home.xml" value="0.546" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/drawable-v24/green_box.xml" value="0.546" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/drawable/white_box.xml" value="0.545" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/activity_course_offer.xml" value="0.5484375" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/activity_course_offer2.xml" value="0.3536458333333333" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/activity_main.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/activity_routine.xml" value="0.5375" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/col1.xml" value="0.5" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/col2.xml" value="0.5515625" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/col3.xml" value="1.3270676691729324" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/col4.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/col5.xml" value="0.5515625" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/col6.xml" value="0.5515625" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/course_offer_item.xml" value="0.5484375" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/home_page.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/mo_cal3.xml" value="0.5515625" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/mo_cal4.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/mo_cal5.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/mo_cal6.xml" value="0.5515625" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/mo_col1.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/mo_col2.xml" value="0.5515625" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/mo_col3.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/mo_col4.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/mo_col5.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/mo_col6.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/mo_routine_cell.xml" value="0.5515625" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/routine_cell.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/sa_col1.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/sa_col2.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/sa_col3.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/sa_col4.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/sa_col5.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/sa_col6.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/sign_in_page.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/su_col1.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/su_col2.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/su_col3.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/su_col4.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/su_col5.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/su_col6.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/su_routine_cell.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/th_col1.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/th_col3.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/th_col4.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/th_col5.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/th_col6.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/th_routine_cell.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/tu_col1.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/tu_col2.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/tu_col3.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/tu_col4.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/tu_col5.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/tu_col6.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/tu_routine_cell.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/we_col1.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/we_col2.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/we_col3.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/we_col4.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/we_col5.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/we_col6.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/we_routine_cell.xml" value="0.5526041666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
