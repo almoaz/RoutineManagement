@@ -62,7 +62,7 @@
             android:orientation="horizontal">
 
             <Spinner
-                android:id="@+id/A_2nd_A_C3"
+                android:id="@+id/A_2nd_A_C4"
                 android:layout_width="100dp"
                 android:layout_height="35dp"
                 android:entries="@array/semester2nd"
