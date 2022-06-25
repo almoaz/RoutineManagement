@@ -1,0 +1,50 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.RoutineManagement" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/White</item>
+        <item name="colorPrimaryVariant">@color/PageBarColor</item>
+        <item name="colorOnPrimary">@color/White</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/White</item>
+        <item name="colorSecondaryVariant">@color/White</item>
+        <item name="colorOnSecondary">@color/White</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Spinner" parent="Widget.AppCompat.Light.DropDownItem.Spinner">
+        <item name="android:paddingStart">1dp</item>
+        <item name="android:paddingEnd">1dp</item>
+        <item name="android:textColor">@color/Green</item>
+        <item name="android:background">@color/White</item>
+        <item name="android:textSize">19sp</item>
+    </style>
+
+    <style name="TeacherSpinner" parent="Widget.AppCompat.Light.DropDownItem.Spinner">
+        <item name="android:textColor">@color/White</item>
+        <item name="android:background">@color/PageBarColor</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="RoutineSpinner" parent="Widget.AppCompat.Light.DropDownItem.Spinner">
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:background">@drawable/bg_box_green</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="RoutineSubject" parent="Widget.AppCompat.Light.DropDownItem.Spinner">
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:textColor">@color/Green</item>
+        <item name="android:background">@drawable/green_box</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Notice" parent="Widget.AppCompat.Light.DropDownItem.Spinner">
+        <item name="android:textColor">@color/PageBarColor</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+</resources>

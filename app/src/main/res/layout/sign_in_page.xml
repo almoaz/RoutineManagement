@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_login">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:text="Head Of departments"
+            android:textColor="@color/White"
+            android:layout_margin="20dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@color/White">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/logo"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_edit_text"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/lock_icon"
+            android:padding="3dp"
+            android:hint="*******"
+            android:textColorHint="@color/White"
+            android:textSize="20sp"
+            android:textColor="@color/White"
+            android:drawablePadding="8dp"/>
+
+
+        <TextView
+            android:id="@+id/log_in"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/sign_in_btn"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:padding="7dp"
+            android:text="Log In"
+            android:textSize="20sp"
+            android:textColor="@color/White"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

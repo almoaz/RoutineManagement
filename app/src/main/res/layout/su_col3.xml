@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/White">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/C_1st_C2"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:entries="@array/semester1st"
+                android:spinnerMode="dropdown"
+                android:background="@drawable/green_box" />
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:background="@drawable/green_box"
+                android:gravity="center">
+
+                <Spinner
+                    android:id="@+id/C_1st_T2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/teacher"
+                    android:spinnerMode="dropdown"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/white_box"/>
+
+                <Spinner
+                    android:id="@+id/C_1st_R2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/roomNo"
+                    android:spinnerMode="dropdown"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/white_box"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/C_2nd_A_C2"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:entries="@array/semester2nd"
+                android:spinnerMode="dropdown"
+                android:background="@drawable/green_box"
+                android:gravity="center_vertical" />
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:background="@drawable/green_box"
+                android:gravity="center">
+
+                <Spinner
+                    android:id="@+id/C_2nd_A_T2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/teacher"
+                    android:spinnerMode="dropdown"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/white_box"/>
+
+                <Spinner
+                    android:id="@+id/C_2nd_A_R2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/roomNo"
+                    android:spinnerMode="dropdown"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/white_box"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/C_3rd_A_C2"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:entries="@array/semester3rd"
+                android:spinnerMode="dropdown"
+                android:background="@drawable/green_box"
+                android:gravity="center_vertical" />
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:background="@drawable/green_box"
+                android:gravity="center">
+
+                <Spinner
+                    android:id="@+id/C_3rd_A_T2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/teacher"
+                    android:spinnerMode="dropdown"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/white_box"/>
+
+                <Spinner
+                    android:id="@+id/C_3rd_A_R2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/roomNo"
+                    android:spinnerMode="dropdown"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/white_box"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/C_4th_A_C2"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:background="@drawable/green_box"
+                android:entries="@array/semester4th"
+                android:gravity="center_vertical"
+                android:spinnerMode="dropdown" />
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:background="@drawable/green_box"
+                android:gravity="center">
+
+                <Spinner
+                    android:id="@+id/C_4th_A_T2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/teacher"
+                    android:spinnerMode="dropdown"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/white_box"/>
+
+                <Spinner
+                    android:id="@+id/C_4th_A_R2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/roomNo"
+                    android:spinnerMode="dropdown"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/white_box"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/C_5th_A_C2"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:entries="@array/semester5th"
+                android:spinnerMode="dropdown"
+                android:background="@drawable/green_box"
+                android:gravity="center_vertical" />
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:background="@drawable/green_box"
+                android:gravity="center">
+
+                <Spinner
+                    android:id="@+id/C_5th_A_T2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/teacher"
+                    android:spinnerMode="dropdown"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/white_box"/>
+
+                <Spinner
+                    android:id="@+id/C_5th_A_R2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/roomNo"
+                    android:spinnerMode="dropdown"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/white_box"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/C_6th_A_C2"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:entries="@array/semester6th"
+                android:spinnerMode="dropdown"
+                android:background="@drawable/green_box"
+                android:gravity="center_vertical" />
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:background="@drawable/green_box"
+                android:gravity="center">
+
+                <Spinner
+                    android:id="@+id/C_6th_A_T2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/teacher"
+                    android:spinnerMode="dropdown"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/white_box"/>
+
+                <Spinner
+                    android:id="@+id/C_6th_A_R2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/roomNo"
+                    android:spinnerMode="dropdown"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/white_box"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/C_7th_A_C2"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:entries="@array/semester7th"
+                android:spinnerMode="dropdown"
+                android:background="@drawable/green_box"
+                android:gravity="center_vertical" />
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:background="@drawable/green_box"
+                android:gravity="center">
+
+                <Spinner
+                    android:id="@+id/C_7th_A_T2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/teacher"
+                    android:spinnerMode="dropdown"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/white_box"/>
+
+                <Spinner
+                    android:id="@+id/C_7th_A_R2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/roomNo"
+                    android:spinnerMode="dropdown"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/white_box"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/C_8th_A_C2"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:entries="@array/semester8th"
+                android:spinnerMode="dropdown"
+                android:background="@drawable/green_box"
+                android:gravity="center_vertical" />
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:background="@drawable/green_box"
+                android:gravity="center">
+
+                <Spinner
+                    android:id="@+id/C_8th_A_T2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/teacher"
+                    android:spinnerMode="dropdown"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/white_box"/>
+
+                <Spinner
+                    android:id="@+id/C_8th_A_R2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/roomNo"
+                    android:spinnerMode="dropdown"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/white_box"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/C_9th_A_C2"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:entries="@array/semester9th"
+                android:spinnerMode="dropdown"
+                android:background="@drawable/green_box"
+                android:gravity="center_vertical" />
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:background="@drawable/green_box"
+                android:gravity="center">
+
+                <Spinner
+                    android:id="@+id/C_9th_A_T2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/teacher"
+                    android:spinnerMode="dropdown"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/white_box"/>
+
+                <Spinner
+                    android:id="@+id/C_9th_A_R2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/roomNo"
+                    android:spinnerMode="dropdown"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/white_box"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/C_10th_A_C2"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:entries="@array/semester10th"
+                android:spinnerMode="dropdown"
+                android:background="@drawable/green_box"
+                android:gravity="center_vertical" />
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:background="@drawable/green_box"
+                android:gravity="center">
+
+                <Spinner
+                    android:id="@+id/C_10th_A_T2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/teacher"
+                    android:spinnerMode="dropdown"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/white_box"/>
+
+                <Spinner
+                    android:id="@+id/C_10th_A_R2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/roomNo"
+                    android:spinnerMode="dropdown"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/white_box"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/C_11th_A_C2"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:entries="@array/semester11th"
+                android:spinnerMode="dropdown"
+                android:background="@drawable/green_box"
+                android:gravity="center_vertical" />
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:background="@drawable/green_box"
+                android:gravity="center">
+
+                <Spinner
+                    android:id="@+id/C_11th_A_T2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/teacher"
+                    android:spinnerMode="dropdown"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/white_box"/>
+
+                <Spinner
+                    android:id="@+id/C_11th_A_R2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/roomNo"
+                    android:spinnerMode="dropdown"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/white_box"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/C_12th_A_C2"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:entries="@array/semester12th"
+                android:spinnerMode="dropdown"
+                android:background="@drawable/green_box"
+                android:gravity="center_vertical" />
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:background="@drawable/green_box"
+                android:gravity="center">
+
+                <Spinner
+                    android:id="@+id/C_12th_A_T2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/teacher"
+                    android:spinnerMode="dropdown"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/white_box"/>
+
+                <Spinner
+                    android:id="@+id/C_12th_A_R2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/roomNo"
+                    android:spinnerMode="dropdown"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/white_box"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

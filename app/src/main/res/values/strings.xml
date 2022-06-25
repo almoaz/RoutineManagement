@@ -1,0 +1,560 @@
+<resources>
+    <string name="app_name">RoutineManagement</string>
+
+    <string name="_1st_semester">1st Semester</string>
+    <string name="_2nd_semester">2nd Semester</string>
+    <string name="_3rd_semester">3rd Semester</string>
+    <string name="_4th_semester">4th Semester</string>
+    <string name="_5th_semester">5th Semester</string>
+    <string name="_6th_semester">6th Semester</string>
+    <string name="_7th_semester">7th Semester</string>
+    <string name="_8th_semester">8th Semester</string>
+    <string name="_9th_semester">9th Semester</string>
+    <string name="_10th_semester">10th Semester</string>
+    <string name="_11th_semester">11th Semester</string>
+    <string name="_12th_semester">12th Semester</string>
+    <string name="sat">Sat</string>
+    <string name="sun">Sun</string>
+
+    <string-array name="subject">
+        <item></item>
+        <item>ECS 1101</item>
+        <item>CSE 1111</item>
+        <item>CSE 1112</item>
+        <item>PHY 1139</item>
+        <item>BSS 1101</item>
+        <item>MAT 1117</item>
+        <item>ECS 1203</item>
+        <item>CSE 1231</item>
+        <item>CSE 1232</item>
+        <item>MAT 1257</item>
+        <item>PHY 1259</item>
+        <item>PHY 1260</item>
+        <item>MEC 1202</item>
+        <item>ECS 1305</item>
+        <item>CSE 1337</item>
+        <item>CSE 1338</item>
+        <item>MAT 1367</item>
+        <item>CSE 1387</item>
+        <item>MEC 1202</item>
+        <item>CSE 2111</item>
+        <item>CSE 2112</item>
+        <item>STA 2187</item>
+        <item>EEE 2147</item>
+        <item>EEE 2148</item>
+        <item>PHY 1260</item>
+        <item>MEC 1202</item>
+        <item>CHM 2101</item>
+        <item>CSE 3111</item>
+        <item>CSE 3112</item>
+        <item>EEE 2267</item>
+        <item>EEE 2268</item>
+        <item>CSE 2277</item>
+        <item>CSE 2278</item>
+        <item>CSE 2361</item>
+        <item>CSE 2362</item>
+        <item>CSE 2339</item>
+        <item>MEC 1202</item>
+        <item>CSE 2367</item>
+        <item>CSE 3167</item>
+        <item>CSE 3168</item>
+        <item>CSE 3170</item>
+        <item>CSE 3171</item>
+    </string-array>
+
+    <string-array name="allsubject">
+        <item> Select Course</item>
+        <item>ECS 1101</item>
+        <item>CSE 1111</item>
+        <item>CSE 1112</item>
+        <item>PHY 1139</item>
+        <item>BSS 1101</item>
+        <item>MAT 1117</item>
+        <item>ECS 1203</item>
+        <item>CSE 1231</item>
+        <item>CSE 1232</item>
+        <item>PHY 1259</item>
+        <item>PHY 1260</item>
+        <item>MAT 1257</item>
+        <item>MEC 1202</item>
+        <item>ECS 1305</item>
+        <item>CSE 1337</item>
+        <item>CSE 1338</item>
+        <item>CSE 1387</item>
+        <item>BHC 1101</item>
+        <item>MAT 1367</item>
+        <item>CSE 2111</item>
+        <item>CSE 2112</item>
+        <item>EEE 2147</item>
+        <item>EEE 2148</item>
+        <item>CHM 2101</item>
+        <item>STA 2187</item>
+        <item>CSE 2211</item>
+        <item>CSE 2212</item>
+        <item>CSE 2277</item>
+        <item>CSE 2278</item>
+        <item>EEE 2267</item>
+        <item>EEE 2268</item>
+        <item>ACT 1305</item>
+        <item>CSE 2337</item>
+        <item>CSE 2338</item>
+        <item>CSE 2339</item>
+        <item>CSE 2367</item>
+        <item>CSE 2361</item>
+        <item>CSE 2362</item>
+        <item>ICT 2302</item>
+        <item>CSE 3111</item>
+        <item>CSE 3112</item>
+        <item>CSE 3135</item>
+        <item>CSE 3136</item>
+        <item>CSE 3167</item>
+        <item>CSE 3168</item>
+        <item>CSE 3169</item>
+        <item>CSE 3170</item>
+        <item>CSE 3171</item>
+        <item>CSE 3285</item>
+        <item>CSE 3286</item>
+        <item>CSE 3297</item>
+        <item>CSE 3298</item>
+        <item>BUS 3309</item>
+        <item>ECO 3201</item>
+        <item>ICT 3204</item>
+        <item>CSE 3311</item>
+        <item>CSE 3313</item>
+        <item>CSE 3314</item>
+        <item>CSE 3315</item>
+        <item>CSE 3316</item>
+        <item>MGT 3311</item>
+        <item>CSE 4112</item>
+        <item>CSE 4114</item>
+        <item>IOM 3111</item>
+        <item>ICT 4106</item>
+        <item>IRI 4201</item>
+        <item>ICT 4308</item>
+        <item>CSE 4111</item>
+        <item>CSE 4112</item>
+        <item>CSE 4113</item>
+        <item>CSE 4114</item>
+        <item>CSE 4115</item>
+        <item>CSE 4116</item>
+        <item>CSE 4117</item>
+        <item>CSE 4118</item>
+        <item>CSE 4119</item>
+        <item>CSE 4120</item>
+        <item>CSE 4121</item>
+        <item>CSE 4122</item>
+        <item>CSE 4123</item>
+        <item>CSE 4124</item>
+        <item>CSE 4125</item>
+        <item>CSE 4126</item>
+        <item>CSE 4127</item>
+        <item>CSE 4128</item>
+        <item>CSE 4129</item>
+        <item>CSE 4130</item>
+        <item>CSE 4141</item>
+        <item>CSE 4143</item>
+        <item>CSE 4145</item>
+        <item>CSE 4147</item>
+        <item>CSE 4149</item>
+        <item>CSE 4211</item>
+        <item>CSE 4212</item>
+        <item>CSE 4213</item>
+        <item>CSE 4214</item>
+        <item>CSE 4214</item>
+        <item>CSE 4216</item>
+        <item>CSE 4217</item>
+        <item>CSE 4218</item>
+        <item>CSE 4219</item>
+        <item>CSE 4220</item>
+        <item>CSE 4221</item>
+        <item>CSE 4223</item>
+        <item>CSE 4225</item>
+        <item>CSE 4227</item>
+        <item>CSE 4229</item>
+        <item>CSE 4231</item>
+        <item>CSE 4233</item>
+        <item>CSE 4235</item>
+        <item>CSE 4237</item>
+        <item>CSE 4239</item>
+        <item>CSE 4251</item>
+        <item>CSE 4252</item>
+
+    </string-array>
+
+    <string-array name="semester1st">
+        <item></item>
+        <item>ECS 1101</item>
+        <item>CSE 1111</item>
+        <item>CSE 1112</item>
+        <item>PHY 1139</item>
+        <item>PHY 1260</item>
+        <item>BSS 1101</item>
+        <item>MAT 1117</item>
+    </string-array>
+
+    <string-array name="semester2nd">
+        <item></item>
+        <item>ECS 1203</item>
+        <item>CSE 1231</item>
+        <item>CSE 1232</item>
+        <item>PHY 1259</item>
+        <item>PHY 1260</item>
+        <item>MAT 1257</item>
+        <item>MEC 1202</item>
+        <item>BHC 1101</item>
+        <item>CIT 1111</item>
+        <item>CSE 2314</item>
+    </string-array>
+
+    <string-array name="semester3rd">
+        <item></item>
+        <item>ECS 1305</item>
+        <item>CSE 1337</item>
+        <item>CSE 1338</item>
+        <item>CSE 1387</item>
+        <item>BHC 1101</item>
+        <item>MAT 1367</item>
+        <item>MEC 1202</item>
+        <item>PHY 1260</item>
+    </string-array>
+
+    <string-array name="semester4th">
+        <item></item>
+        <item>CSE 2111</item>
+        <item>CSE 2112</item>
+        <item>EEE 2147</item>
+        <item>EEE 2148</item>
+        <item>CHM 2101</item>
+        <item>STA 2187</item>
+        <item>MGT 3311</item>
+        <item>PHY 1260</item>
+        <item>BHC 1101</item>
+        <item>CSE 2314</item>
+    </string-array>
+
+    <string-array name="semester5th">
+        <item></item>
+        <item>CSE 2211</item>
+        <item>CSE 2212</item>
+        <item>CSE 2277</item>
+        <item>CSE 2278</item>
+        <item>EEE 2267</item>
+        <item>EEE 2268</item>
+        <item>ACT 1305</item>
+        <item>CSE 2237</item>
+        <item>CSE 2238</item>
+        <item>CSE 2377</item>
+        <item>CSE 2378</item>
+        <item>PHY 1260</item>
+        <item>CSE 2314</item>
+        <item>CSE 3111</item>
+        <item>CSE 3112</item>
+    </string-array>
+
+    <string-array name="semester6th">
+        <item></item>
+        <item>CSE 2337</item>
+        <item>CSE 2338</item>
+        <item>CSE 2339</item>
+        <item>CSE 2367</item>
+        <item>CSE 2361</item>
+        <item>CSE 2362</item>
+        <item>ICT 2302</item>
+        <item>CSE 3161</item>
+        <item>CSE 3162</item>
+        <item>CSE 2314</item>
+        <item>CIT 2311</item>
+        <item>PHY 1260</item>
+        <item>CSE 2314</item>
+        <item>MEC 1202</item>
+    </string-array>
+
+    <string-array name="semester7th">
+        <item></item>
+        <item>CSE 3135</item>
+        <item>CSE 3136</item>
+        <item>CSE 3167</item>
+        <item>CSE 3168</item>
+        <item>CSE 3169</item>
+        <item>CSE 3170</item>
+        <item>CSE 3171</item>
+        <item>PHY 1260</item>
+        <item>CSE 2314</item>
+        <item>CSE 2367</item>
+        <item>ICT 2302</item>
+        <item>MGT 3311</item>
+    </string-array>
+
+    <string-array name="semester8th">
+        <item></item>
+        <item>CSE 3285</item>
+        <item>CSE 3286</item>
+        <item>CSE 3297</item>
+        <item>CSE 3298</item>
+        <item>BUS 3309</item>
+        <item>ECO 3201</item>
+        <item>ICT 3204</item>
+        <item>CSE 3170</item>
+        <item>IOM 3111</item>
+        <item>ICT 3204</item>
+        <item>PHY 1260</item>
+        <item>CSE 2314</item>
+        <item>CSE 3169</item>
+        <item>MGT 3311</item>
+    </string-array>
+
+    <string-array name="semester9th">
+        <item></item>
+        <item>CSE 3311</item>
+        <item>CSE 3313</item>
+        <item>CSE 3314</item>
+        <item>CSE 3315</item>
+        <item>CSE 3316</item>
+        <item>MGT 3311</item>
+        <item>MIS 3301</item>
+        <item>PHY 1260</item>
+        <item>CSE 2314</item>
+        <item>CSE 3169</item>
+        <item>MGT 3311</item>
+        <item>CSE 3285</item>
+        <item>CSE 3286</item>
+        <item>CSE 3135</item>
+        <item>CSE 3136</item>
+    </string-array>
+
+    <string-array name="semester10th">
+        <item></item>
+        <item>CSE 4112</item>
+        <item>CSE 4114</item>
+        <item>IOM 3111</item>
+        <item>ICT 4106</item>
+        <item>PHY 1260</item>
+        <item>CSE 2314</item>
+        <item>CSE 3169</item>
+        <item>MGT 3311</item>
+        <item>CSE 3135</item>
+        <item>CSE 3136</item>
+        <item>CSE 3311</item>
+        <item>CSE 3313</item>
+        <item>CSE 3314</item>
+        <item>CSE 3316</item>
+
+    </string-array>
+
+    <string-array name="semester11th">
+        <item></item>
+        <item>IRI 4201</item>
+        <item>PHY 1260</item>
+        <item>CSE 2314</item>
+        <item>CSE 4251</item>
+        <item>CSE 4252</item>
+        <item>ICT 4106</item>
+        <item>IOM 3111</item>
+        <item>CSE 4114</item>
+        <item>CSE 4149</item>
+    </string-array>
+
+    <string-array name="semester12th">
+        <item></item>
+        <item>ICT 4308</item>
+        <item>CSE 4112</item>
+        <item>CSE 4141</item>
+        <item>CSE 4251</item>
+        <item>CSE 4252</item>
+    </string-array>
+
+
+    <string-array name="notice">
+
+        <item>Notice For</item>
+        <item>Student</item>
+        <item>Teacher</item>
+        <item>All</item>
+
+    </string-array>
+
+    <string-array name="semester">
+        <item>Select semester</item>
+        <item>1st Semester</item>
+        <item>2nd Semester</item>
+        <item>3rd Semester</item>
+        <item>4th Semester</item>
+        <item>5th Semester</item>
+        <item>6th Semester</item>
+        <item>7th Semester</item>
+        <item>8th Semester</item>
+        <item>9th Semester</item>
+        <item>10th Semester</item>
+        <item>11th Semester</item>
+        <item>12th Semester</item>
+    </string-array>
+
+    <string-array name="teacher">
+        <item></item>
+        <item>SJA</item>
+        <item>TN</item>
+        <item>ZH</item>
+        <item>ABM</item>
+        <item>SR</item>
+        <item>FNC</item>
+        <item>RK</item>
+        <item>TA</item>
+        <item>TSA</item>
+        <item>DRI</item>
+        <item>SS</item>
+        <item>MR</item>
+        <item>SA</item>
+        <item>MH</item>
+        <item>AB</item>
+        <item>HM</item>
+        <item>MM</item>
+        <item>MS</item>
+    </string-array>
+
+    <string-array name="courseTeacher">
+        <item>Add Teacher</item>
+        <item>Mr.Syed Jamaluddin Ahmad</item>
+        <item>Mrs. Tasnim Niger</item>
+        <item>Mr.Zahid Hasan</item>
+        <item>Md.Abdullah Bin Masud</item>
+        <item>Ms.Sharmina Rahman</item>
+        <item>Ms.Fayazunnesa Chowdhury</item>
+        <item>Roksana Khandoker</item>
+        <item>Tania Annur</item>
+        <item>Tasnim Ahmed</item>
+        <item>Prof.Dr.Rabiul Islam</item>
+        <item>Sanjana Shahnaj</item>
+        <item>Mr.Mijanur Rahman</item>
+        <item>Prof.Dr.Shamim Akter</item>
+        <item>Mr.Mehedi Hassan</item>
+        <item>Abu Hasnath</item>
+        <item>Mr.Hasan Mahmud</item>
+        <item>Mrinmoy Mitra</item>
+        <item>Mr.Siraj</item>
+    </string-array>
+
+    <string-array name="group">
+        <item> Select</item>
+        <item> Select Group</item>
+        <item>Group A</item>
+        <item>1st Semester</item>
+        <item>Group B</item>
+        <item>2nd Semester</item>
+        <item>Group C</item>
+        <item>3rd Semester</item>
+        <item>Group D</item>
+        <item>4th Semester</item>
+        <item>Group E</item>
+        <item>5th Semester</item>
+        <item>Group F</item>
+        <item>6th Semester</item>
+        <item>Group G</item>
+        <item>7th Semester</item>
+        <item>Group H</item>
+        <item>8th Semester</item>
+        <item>Group I</item>
+        <item>9th Semester</item>
+        <item>Group J</item>
+        <item>10th Semester</item>
+        <item>Group K</item>
+        <item>11th Semester</item>
+        <item>Group L</item>
+        <item>12th Semester</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="week">
+        <item>Sat</item>
+        <item>Sun</item>
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wet</item>
+        <item>Tha</item>
+        <item>Fri</item>
+    </string-array>
+
+    <string-array name="routineCondition">
+        <item>Select</item>
+        <item>Al Semester</item>
+        <item>1st Semester</item>
+        <item>2nd Semester</item>
+        <item>3rd Semester</item>
+        <item>4th Semester</item>
+        <item>5th Semester</item>
+        <item>6th Semester</item>
+        <item>7th Semester</item>
+        <item>8th Semester</item>
+        <item>9th Semester</item>
+        <item>10th Semester</item>
+        <item>11th Semester</item>
+        <item>12th Semester</item>
+
+    </string-array>
+
+    <string-array name="time">
+        <item> </item>
+        <item>08:00 - 09:30</item>
+        <item>08:30 - 10:00</item>
+        <item>09:00 - 10:30</item>
+        <item>09:30 - 11:00</item>
+        <item>10:00 - 11:30</item>
+        <item>10:30 - 12:00</item>
+        <item>11:00 - 12:30</item>
+        <item>11:30 - 01:00</item>
+        <item>12:00 - 01:30</item>
+        <item>12:30 - 02:00</item>
+        <item>01:00 - 02:30</item>
+        <item>01:30 - 03:00</item>
+        <item>02:00 - 03:30</item>
+        <item>02:30 - 04:00</item>
+        <item>03:00 - 04:30</item>
+        <item>03:30 - 05:00</item>
+        <item>04:00 - 05:30</item>
+        <item>04:30 - 06:00</item>
+        <item>05:00 - 06:30</item>
+        <item>05:30 - 07:00</item>
+    </string-array>
+
+    <string-array name="month">
+        <item>Select</item>
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+
+    </string-array>
+
+    <string-array name="day">
+        <item>Select</item>
+        <item>Open</item>
+        <item>Off</item>
+    </string-array>
+
+    <string-array name="day2">
+        <item>Select</item>
+        <item>Open</item>
+        <item>Off</item>
+        <item>NoDay</item>
+
+    </string-array>
+
+    <string-array name="roomNo">
+        <item></item>
+        <item>(502)</item>
+        <item>(503)</item>
+        <item>(504)</item>
+        <item>(505)</item>
+        <item>(506)</item>
+
+    </string-array>
+
+
+</resources>

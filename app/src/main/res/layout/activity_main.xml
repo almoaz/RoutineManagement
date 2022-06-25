@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.RoutineActivity"
+    android:background="@drawable/bg_home">
+
+    <LinearLayout
+        android:id="@+id/home_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone">
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:background="@drawable/bg_category_item">
+
+           <TextView
+               android:id="@+id/home_course_offer_btn"
+               android:layout_width="200dp"
+               android:layout_height="wrap_content"
+               android:textColor="@color/PageBarColor"
+               android:text="Course Offer"
+               android:textSize="22sp"
+               android:textStyle="bold"
+               android:padding="5dp"
+               android:gravity="center"
+               android:background="@color/White" />
+
+           <TextView
+               android:id="@+id/home_create_routine_btn"
+               android:layout_width="200dp"
+               android:layout_height="wrap_content"
+               android:textColor="@color/White"
+               android:text="Create Routine"
+               android:textSize="22sp"
+               android:layout_gravity="center"
+               android:textStyle="bold"
+               android:padding="5dp"
+               android:gravity="center" />
+
+       </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp">
+
+            <EditText
+                android:id="@+id/home_teacher_name_text"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:hint="Write teacher short name"
+                android:textColor="@color/White"
+                android:textColorHint="@color/White70"
+                android:background="@drawable/white_box"
+                android:padding="5dp"/>
+
+            <Button
+                android:id="@+id/teacher_name_submit_btn"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:text="Submit"
+                android:textColor="@color/Green"
+                android:background="@drawable/white_box"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/sign_in_page_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/sign_in_page">
+        </include>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

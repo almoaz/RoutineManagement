@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.CourseOfferActivity"
+    android:background="@drawable/bg_home">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:text="Course Offering"
+                android:textColor="@color/White"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/select_course_offer_course"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:background="@color/White"
+                android:entries="@array/allsubject"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:spinnerMode="dropdown"
+                android:theme="@style/Spinner" />
+
+            <Spinner
+                android:id="@+id/select_course_offer_semester"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:background="@color/White"
+                android:entries="@array/semester"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:spinnerMode="dropdown"
+                android:theme="@style/Spinner" />
+
+            <TextView
+                android:id="@+id/course_offer_submit_btn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/box_btn"
+                android:gravity="center"
+                android:padding="4.5dp"
+                android:text="Add "
+                android:textColor="@color/White"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="For 1st Semester"
+                    android:textColor="@color/White"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="25sp"
+                    android:layout_marginTop="10dp">
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/semester_1st_course_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:orientation="horizontal" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="For 2nd Semester"
+                    android:textColor="@color/White"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="25sp"
+                    android:layout_marginTop="10dp">
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/semester_2nd_course_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:orientation="horizontal" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="For 3rd Semester"
+                    android:textColor="@color/White"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="25sp"
+                    android:layout_marginTop="10dp">
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/semester_3rd_course_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:orientation="horizontal" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="For 4th Semester"
+                    android:textColor="@color/White"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="25sp"
+                    android:layout_marginTop="10dp">
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/semester_4th_course_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:orientation="horizontal" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="For 5th Semester"
+                    android:textColor="@color/White"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="25sp"
+                    android:layout_marginTop="10dp">
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/semester_5th_course_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:orientation="horizontal" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="For 6th Semester"
+                    android:textColor="@color/White"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="25sp"
+                    android:layout_marginTop="10dp">
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/semester_6th_course_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:orientation="horizontal" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="For 7th Semester"
+                    android:textColor="@color/White"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="25sp"
+                    android:layout_marginTop="10dp">
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/semester_7th_course_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:orientation="horizontal" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="For 8th Semester"
+                    android:textColor="@color/White"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="25sp"
+                    android:layout_marginTop="10dp">
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/semester_8th_course_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:orientation="horizontal" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="For 9th Semester"
+                    android:textColor="@color/White"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="25sp"
+                    android:layout_marginTop="10dp">
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/semester_9th_course_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:orientation="horizontal" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="For 10th Semester"
+                    android:textColor="@color/White"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="25sp"
+                    android:layout_marginTop="10dp">
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/semester_10th_course_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:orientation="horizontal" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="For 11th Semester"
+                    android:textColor="@color/White"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="25sp"
+                    android:layout_marginTop="10dp">
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/semester_11th_course_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:orientation="horizontal" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="For 12th Semester"
+                    android:textColor="@color/White"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="25sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp">
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/semester_12th_course_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:orientation="horizontal" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

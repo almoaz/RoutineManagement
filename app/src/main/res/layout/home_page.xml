@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/bg_category_item"
+            android:layout_marginBottom="25dp">
+
+
+            <TextView
+                android:id="@+id/routine_open_btn"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/PageBarColor"
+                android:text="Routine Open"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:gravity="center"
+                android:background="@color/White" />
+
+            <TextView
+                android:id="@+id/create_routine_btn"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:text="Create Routine"
+                android:textSize="22sp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/create_routine_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/White"
+            android:layout_margin="25dp"
+            android:layout_gravity="center">
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollIndicators="none">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/bg_box_green">
+
+
+                        <EditText
+                            android:id="@+id/count_edit_text"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/green_box"
+                            android:hint="No"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:textColor="@color/Green"
+                            android:textColorHint="@color/Black50"
+                            android:backgroundTint="@color/White"
+                            android:textCursorDrawable="@drawable/green_box"/>
+
+
+                        <TextView
+                            android:layout_width="900dp"
+                            android:layout_height="40dp"
+                            android:text="Morning"
+                            android:textColor="@color/White"
+                            android:textSize="20sp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="500dp"
+                            android:layout_height="40dp"
+                            android:text="Evening"
+                            android:textColor="@color/White"
+                            android:textSize="20sp"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/bg_box_green">
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="80dp"
+                            android:text="Day"
+                            android:textColor="@color/White"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:background="@drawable/bg_category_item"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="@drawable/bg_box_green">
+
+
+                            <TextView
+                                android:layout_width="180dp"
+                                android:layout_height="40dp"
+                                android:text="Time"
+                                android:textColor="@color/White"
+                                android:textSize="20sp"
+                                android:gravity="center"
+                                android:background="@drawable/bg_category_item"/>
+
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/routine_condition_text"
+                                    android:layout_width="140dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/bg_box_green"
+                                    android:text="Select"
+                                    android:textSize="20sp"
+                                    android:gravity="center"
+                                    android:textColor="@color/Green"
+                                    android:textColorHint="@color/Black50"
+                                    android:backgroundTint="@color/White"/>
+
+                                <Spinner
+                                    android:id="@+id/routine_condition"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:entries="@array/routineCondition"
+                                    android:spinnerMode="dropdown" />
+
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="@drawable/bg_box_green">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/A_time"
+                                    android:layout_width="170dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/bg_box_green"
+                                    android:hint="09:30 - 11:00"
+                                    android:textSize="20sp"
+                                    android:gravity="center"
+                                    android:textColor="@color/Green"
+                                    android:textColorHint="@color/Black50"
+                                    android:backgroundTint="@color/White"/>
+
+                                <Spinner
+                                    android:id="@+id/s_a_time"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:entries="@array/time"
+                                    android:spinnerMode="dropdown" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:background="@drawable/bg_box_green">
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="40dp"
+                                    android:text="Module"
+                                    android:textColor="@color/White"
+                                    android:textSize="20sp"
+                                    android:gravity="center"
+                                    android:background="@drawable/bg_category_item"/>
+
+                                <TextView
+                                    android:layout_width="110dp"
+                                    android:layout_height="40dp"
+                                    android:text="Faculty"
+                                    android:textColor="@color/White"
+                                    android:textSize="20sp"
+                                    android:gravity="center"
+                                    android:background="@drawable/bg_category_item"/>
+
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="@drawable/bg_box_green">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/B_time"
+                                    android:layout_width="170dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/bg_box_green"
+                                    android:hint="09:30 - 11:00"
+                                    android:textSize="20sp"
+                                    android:gravity="center"
+                                    android:textColor="@color/Green"
+                                    android:textColorHint="@color/Black50"
+                                    android:backgroundTint="@color/White"/>
+                                <Spinner
+                                    android:id="@+id/s_b_time"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:entries="@array/time"
+                                    android:spinnerMode="dropdown" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:background="@drawable/bg_box_green">
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="40dp"
+                                    android:text="Module"
+                                    android:textColor="@color/White"
+                                    android:textSize="20sp"
+                                    android:gravity="center"
+                                    android:background="@drawable/bg_category_item"/>
+
+                                <TextView
+                                    android:layout_width="110dp"
+                                    android:layout_height="40dp"
+                                    android:text="Faculty"
+                                    android:textColor="@color/White"
+                                    android:textSize="20sp"
+                                    android:gravity="center"
+                                    android:background="@drawable/bg_category_item"/>
+
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="@drawable/bg_box_green">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/C_time"
+                                    android:layout_width="170dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/bg_box_green"
+                                    android:hint="09:30 - 11:00"
+                                    android:textSize="20sp"
+                                    android:gravity="center"
+                                    android:textColor="@color/Green"
+                                    android:textColorHint="@color/Black50"
+                                    android:backgroundTint="@color/White"/>
+                                <Spinner
+                                    android:id="@+id/s_c_time"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:entries="@array/time"
+                                    android:spinnerMode="dropdown" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:background="@drawable/bg_box_green">
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="40dp"
+                                    android:text="Module"
+                                    android:textColor="@color/White"
+                                    android:textSize="20sp"
+                                    android:gravity="center"
+                                    android:background="@drawable/bg_category_item"/>
+
+                                <TextView
+                                    android:layout_width="110dp"
+                                    android:layout_height="40dp"
+                                    android:text="Faculty"
+                                    android:textColor="@color/White"
+                                    android:textSize="20sp"
+                                    android:gravity="center"
+                                    android:background="@drawable/bg_category_item"/>
+
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="@drawable/bg_box_green">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/D_time"
+                                    android:layout_width="170dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/bg_box_green"
+                                    android:hint="09:30 - 11:00"
+                                    android:textSize="20sp"
+                                    android:gravity="center"
+                                    android:textColor="@color/Green"
+                                    android:textColorHint="@color/Black50"
+                                    android:backgroundTint="@color/White"/>
+                                <Spinner
+                                    android:id="@+id/s_d_time"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:entries="@array/time"
+                                    android:spinnerMode="dropdown" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:background="@drawable/bg_box_green">
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="40dp"
+                                    android:text="Module"
+                                    android:textColor="@color/White"
+                                    android:textSize="20sp"
+                                    android:gravity="center"
+                                    android:background="@drawable/bg_category_item"/>
+
+                                <TextView
+                                    android:layout_width="110dp"
+                                    android:layout_height="40dp"
+                                    android:text="Faculty"
+                                    android:textColor="@color/White"
+                                    android:textSize="20sp"
+                                    android:gravity="center"
+                                    android:background="@drawable/bg_category_item"/>
+
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="@drawable/bg_box_green">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/E_time"
+                                    android:layout_width="170dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/bg_box_green"
+                                    android:hint="09:30 - 11:00"
+                                    android:textSize="20sp"
+                                    android:gravity="center"
+                                    android:textColor="@color/Green"
+                                    android:textColorHint="@color/Black50"
+                                    android:backgroundTint="@color/White"/>
+                                <Spinner
+                                    android:id="@+id/s_e_time"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:entries="@array/time"
+                                    android:spinnerMode="dropdown" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:background="@drawable/bg_box_green">
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="40dp"
+                                    android:text="Module"
+                                    android:textColor="@color/White"
+                                    android:textSize="20sp"
+                                    android:gravity="center"
+                                    android:background="@drawable/bg_category_item"/>
+
+                                <TextView
+                                    android:layout_width="110dp"
+                                    android:layout_height="40dp"
+                                    android:text="Faculty"
+                                    android:textColor="@color/White"
+                                    android:textSize="20sp"
+                                    android:gravity="center"
+                                    android:background="@drawable/bg_category_item"/>
+
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="@drawable/bg_box_green">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/F_time"
+                                    android:layout_width="170dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/bg_box_green"
+                                    android:hint="09:30 - 11:00"
+                                    android:textSize="20sp"
+                                    android:gravity="center"
+                                    android:textColor="@color/Green"
+                                    android:textColorHint="@color/Black50"
+                                    android:backgroundTint="@color/White"/>
+                                <Spinner
+                                    android:id="@+id/s_f_time"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:entries="@array/time"
+                                    android:spinnerMode="dropdown" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:background="@drawable/bg_box_green">
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="40dp"
+                                    android:text="Module"
+                                    android:textColor="@color/White"
+                                    android:textSize="20sp"
+                                    android:gravity="center"
+                                    android:background="@drawable/bg_category_item"/>
+
+                                <TextView
+                                    android:layout_width="110dp"
+                                    android:layout_height="40dp"
+                                    android:text="Faculty"
+                                    android:textColor="@color/White"
+                                    android:textSize="20sp"
+                                    android:gravity="center"
+                                    android:background="@drawable/bg_category_item"/>
+
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <include
+                            layout="@layout/sa_routine_cell">
+
+                        </include>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:background="@color/PageBarColor"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <include
+                            layout="@layout/su_routine_cell">
+
+                        </include>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:background="@color/PageBarColor"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <include
+                            layout="@layout/mo_routine_cell">
+
+                        </include>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:background="@color/PageBarColor"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <include
+                            layout="@layout/tu_routine_cell">
+
+                        </include>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:background="@color/PageBarColor"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <include
+                            layout="@layout/we_routine_cell">
+
+                        </include>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:background="@color/PageBarColor"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <include
+                            layout="@layout/th_routine_cell">
+
+                        </include>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp"
+                        android:background="@color/PageBarColor"/>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/routine_submit_btn"
+                            android:layout_width="200dp"
+                            android:layout_height="60dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/bg_box_green"
+                            android:gravity="center"
+                            android:text="Submit"
+                            android:textColor="@color/White"
+                            android:textSize="20sp" />
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

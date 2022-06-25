@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Green">#1B6565</color>
+    <color name="White">#FFFFFF</color>
+    <color name="White70">#70FFFFFF</color>
+    <color name="Black">#000000</color>
+    <color name="Red">#FF0000</color>
+    <color name="Black50">#66000000</color>
+    <color name="TextBlue">#343367</color>
+    <color name="PageBarColor">#1B6565</color>
+    <color name="ClassEnd">#C2CFCA</color>
+</resources>

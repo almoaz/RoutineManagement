@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/course_delete_cancel_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+
+            <TextView
+                android:id="@+id/delete_course"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:text="Delete"
+                android:background="@drawable/box_btn"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/delete_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:text="Cancel"
+                android:background="@drawable/box_btn"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="25dp"
+            android:id="@+id/course_item_layout">
+
+            <LinearLayout
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/box_btn">
+
+                <TextView
+                    android:id="@+id/course_name"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/White"
+                    android:text="CSE 2277 "
+                    android:textSize="22sp"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_margin="4dp"/>
+
+                <TextView
+                    android:id="@+id/course_credit"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/White"
+                    android:text="Credit : 3 "
+                    android:textSize="22sp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_margin="4dp"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/right_arrow"
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/right_arrow"
+                android:layout_gravity="center"
+                android:background="@drawable/box_btn"/>
+
+
+            <LinearLayout
+                android:id="@+id/add_teacher_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="bottom"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/delete_teacher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/White"
+                    android:text="Delete"
+                    android:background="@drawable/box_btn"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/add_teacher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/White"
+                    android:text="Add"
+                    android:background="@drawable/box_btn"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:gravity="center"
+                    android:layout_gravity="center" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/course_teacher_name"
+                        android:layout_width="250dp"
+                        android:layout_height="66dp"
+                        android:textColor="@color/Green"
+                        android:text="MD Jamal Uddin"
+                        android:textSize="19sp"
+                        android:textStyle="bold"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:background="@color/White"
+                        android:visibility="gone"/>
+
+                    <Spinner
+                        android:id="@+id/select_course_teacher"
+                        android:layout_width="300dp"
+                        android:layout_height="66dp"
+                        android:entries="@array/courseTeacher"
+                        android:spinnerMode="dropdown"
+                        android:theme="@style/Spinner"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center"
+                        android:background="@color/White"
+                        android:padding="5dp"/>
+
+
+                    <ImageView
+                        android:id="@+id/left_arrow"
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/left_arrow"
+                        android:layout_gravity="center"
+                        android:background="@drawable/box_btn"/>
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
