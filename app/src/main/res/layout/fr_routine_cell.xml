@@ -29,7 +29,7 @@
                 android:id="@+id/week_select_text7"
                 android:layout_width="60dp"
                 android:layout_height="390dp"
-                android:text="Wet"
+                android:text="Fri"
                 android:textColor="@color/White"
                 android:textSize="20sp"
                 android:gravity="center"
