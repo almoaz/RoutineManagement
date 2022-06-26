@@ -636,6 +636,21 @@
 
                     <View
                         android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:background="@color/PageBarColor"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <include
+                            layout="@layout/fr_routine_cell">
+
+                        </include>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
                         android:layout_height="16dp"
                         android:background="@color/PageBarColor"/>
 
