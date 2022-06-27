@@ -36,6 +36,20 @@ public class RoutineCheck {
         subjectCheck("1st Semester",c1C2,c1T2);
 
 
+        b1C4.setSelection(7);
+        c1C4.setSelection(4);
+
+        subjectCheck("1st Semester",b1C4,b1T4);
+        subjectCheck("1st Semester",c1C4,c1T4);
+
+
+        d1C5.setSelection(2);
+        e1C5.setSelection(3);
+
+        subjectCheck("1st Semester",d1C5,d1T5);
+        subjectCheck("1st Semester",e1C5,e1T5);
+
+
 
 
     }
@@ -46,6 +60,16 @@ public class RoutineCheck {
         a2C2.setSelection(2);
         b2C2.setSelection(6);
         d2C2.setSelection(4);
+
+        a2C3.setSelection(1);
+        c2C3.setSelection(7);
+
+        a2C4.setSelection(2);
+        b2C4.setSelection(3);
+        c2C4.setSelection(6);
+
+        b2C6.setSelection(4);
+        c2C6.setSelection(5);
 
     }
 
@@ -58,6 +82,11 @@ public class RoutineCheck {
         a3C2.setSelection(6);
         b3C2.setSelection(1);
 
+        d3C4.setSelection(2);
+        e3C4.setSelection(3);
+
+        a3C6.setSelection(4);
+
     }
 
     public static void check4thSubject(Spinner a4thC, Spinner b4C, Spinner c4C, Spinner d4C, Spinner e4C, Spinner f4C, Spinner a4T, Spinner b4T, Spinner c4T, Spinner d4T, Spinner e4T, Spinner f4T, Spinner a4R, Spinner b4R, Spinner c4R, Spinner d4R, Spinner e4R, Spinner f4R, Spinner a4C2, Spinner b4C2, Spinner c4C2, Spinner d4C2, Spinner e4C2, Spinner f4C2, Spinner a4T2, Spinner b4T2, Spinner c4T2, Spinner d4T2, Spinner e4T2, Spinner f4T2, Spinner a4R2, Spinner b4R2, Spinner c4R2, Spinner d4R2, Spinner e4R2, Spinner f4R2, Spinner a4C3, Spinner b4C3, Spinner c4C3, Spinner d4C3, Spinner e4C3, Spinner f4C3, Spinner a4T3, Spinner b4T3, Spinner c4T3, Spinner d4T3, Spinner e4T3, Spinner f4T3, Spinner a4R3, Spinner b4R3, Spinner c4R3, Spinner d4R3, Spinner e4R3, Spinner f4R3, Spinner a4C4, Spinner b4C4, Spinner c4C4, Spinner d4C4, Spinner e4C4, Spinner f4C4, Spinner a4T4, Spinner b4T4, Spinner c4T4, Spinner d4T4, Spinner e4T4, Spinner f4T4, Spinner a4R4, Spinner b4R4, Spinner c4R4, Spinner d4R4, Spinner e4R4, Spinner f4R4, Spinner a4C5, Spinner b4C5, Spinner c4C5, Spinner d4C5, Spinner e4C5, Spinner f4C5, Spinner a4T5, Spinner b4T5, Spinner c4T5, Spinner d4T5, Spinner e4T5, Spinner f4T5, Spinner a4R5, Spinner b4R5, Spinner c4R5, Spinner d4R5, Spinner e4R5, Spinner f4R5, Spinner a4C6, Spinner b4C6, Spinner c4C6, Spinner d4C6, Spinner e4C6, Spinner f4C6, Spinner a4T6, Spinner b4T6, Spinner c4T6, Spinner d4T6, Spinner e4T6, Spinner f4T6, Spinner a4R6, Spinner b4R6, Spinner c4R6, Spinner d4R6, Spinner e4R6, Spinner f4R6) {
@@ -68,12 +97,33 @@ public class RoutineCheck {
         c4C2.setSelection(3);
         d4C2.setSelection(1);
 
+        d4C3.setSelection(1);
+        e4C3.setSelection(2);
+        f4C3.setSelection(5);
+
+        d4C4.setSelection(10);
+
+        b4C5.setSelection(3);
+        c4C5.setSelection(4);
+        e4C5.setSelection(6);
+
     }
 
     public static void check5thSubject(Spinner a5thC, Spinner b5C, Spinner c5C, Spinner d5C, Spinner e5C, Spinner f5C, Spinner a5T, Spinner b5T, Spinner c5T, Spinner d5T, Spinner e5T, Spinner f5T, Spinner a5R, Spinner b5R, Spinner c5R, Spinner d5R, Spinner e5R, Spinner f5R, Spinner a5C2, Spinner b5C2, Spinner c5C2, Spinner d5C2, Spinner e5C2, Spinner f5C2, Spinner a5T2, Spinner b5T2, Spinner c5T2, Spinner d5T2, Spinner e5T2, Spinner f5T2, Spinner a5R2, Spinner b5R2, Spinner c5R2, Spinner d5R2, Spinner e5R2, Spinner f5R2, Spinner a5C3, Spinner b5C3, Spinner c5C3, Spinner d5C3, Spinner e5C3, Spinner f5C3, Spinner a5T3, Spinner b5T3, Spinner c5T3, Spinner d5T3, Spinner e5T3, Spinner f5T3, Spinner a5R3, Spinner b5R3, Spinner c5R3, Spinner d5R3, Spinner e5R3, Spinner f5R3, Spinner a5C4, Spinner b5C4, Spinner c5C4, Spinner d5C4, Spinner e5C4, Spinner f5C4, Spinner a5T4, Spinner b5T4, Spinner c5T4, Spinner d5T4, Spinner e5T4, Spinner f5T4, Spinner a5R4, Spinner b5R4, Spinner c5R4, Spinner d5R4, Spinner e5R4, Spinner f5R4, Spinner a5C5, Spinner b5C5, Spinner c5C5, Spinner d5C5, Spinner e5C5, Spinner f5C5, Spinner a5T5, Spinner b5T5, Spinner c5T5, Spinner d5T5, Spinner e5T5, Spinner f5T5, Spinner a5R5, Spinner b5R5, Spinner c5R5, Spinner d5R5, Spinner e5R5, Spinner f5R5, Spinner a5C6, Spinner b5C6, Spinner c5C6, Spinner d5C6, Spinner e5C6, Spinner f5C6, Spinner a5T6, Spinner b5T6, Spinner c5T6, Spinner d5T6, Spinner e5T6, Spinner f5T6, Spinner a5R6, Spinner b5R6, Spinner c5R6, Spinner d5R6, Spinner e5R6, Spinner f5R6) {
 
-        a5thC.setSelection(14);
-        b5C.setSelection(5);
+        a5C3.setSelection(5);
+        b5C3.setSelection(6);
+
+        a5C4.setSelection(14);
+        b5C4.setSelection(5);
+        d5C4.setSelection(13);
+
+        a5C5.setSelection(14);
+        b5C5.setSelection(15);
+        d5C5.setSelection(3);
+
+        a5C6.setSelection(3);
+        b5C6.setSelection(4);
 
 
     }

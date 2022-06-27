@@ -2272,6 +2272,7 @@ public class CourseOffer {
                                                         {
                                                             courseViewHolder.addBtn.setVisibility(View.GONE);
                                                             courseViewHolder.selectTeacherName.setVisibility(View.GONE);
+                                                            courseViewHolder.selectTeacherName.setSelection(0);
                                                             courseViewHolder.cancelBtn.setVisibility(View.VISIBLE);
                                                             courseViewHolder.courseTeacherName.setVisibility(View.VISIBLE);
 
