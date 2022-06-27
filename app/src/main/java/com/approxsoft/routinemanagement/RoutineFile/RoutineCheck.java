@@ -133,7 +133,7 @@ public class RoutineCheck {
         b6C.setSelection(5);
         c6C.setSelection(6);
 
-        b6C2.setSelection(1);
+        b6C2.setSelection(5);
         d6C2.setSelection(1);
         e6C2.setSelection(1);
     }
