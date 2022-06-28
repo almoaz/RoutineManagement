@@ -48,7 +48,7 @@
                     android:background="@drawable/bg_box_green"
                     android:backgroundTint="@color/White"
                     android:gravity="center"
-                    android:text="Select"
+                    android:text="All Semester"
                     android:textColor="@color/Green"
                     android:textColorHint="@color/Black50"
                     android:textSize="20sp" />
