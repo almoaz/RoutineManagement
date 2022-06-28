@@ -1,5 +1,6 @@
 package com.approxsoft.routinemanagement.RoutineFile;
 
+import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -75,6 +76,7 @@ public class ShowRoutine {
                 });
 
                 routineReference.child("Department Of CSE And CSIT").child("Routine").child(usersIDs).addValueEventListener(new ValueEventListener() {
+                    @SuppressLint("SetTextI18n")
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot)
                     {
@@ -106,6 +108,20 @@ public class ShowRoutine {
                             String e1r = Objects.requireNonNull(snapshot.child("E1R").getValue()).toString();
                             String f1r = Objects.requireNonNull(snapshot.child("F1R").getValue()).toString();
 
+                            routineRecordViewHolder.ac1.setText(a1c);
+                            routineRecordViewHolder.bc1.setText(b1c);
+                            routineRecordViewHolder.cc1.setText(c1c);
+                            routineRecordViewHolder.dc1.setText(d1c);
+                            routineRecordViewHolder.ec1.setText(e1c);
+                            routineRecordViewHolder.fc1.setText(f1c);
+
+                            routineRecordViewHolder.at1.setText(a1t+"  ("+a1r+")");
+                            routineRecordViewHolder.bt1.setText(b1t+"  ("+b1r+")");
+                            routineRecordViewHolder.ct1.setText(c1t+"  ("+c1r+")");
+                            routineRecordViewHolder.dt1.setText(d1t+"  ("+d1r+")");
+                            routineRecordViewHolder.et1.setText(e1t+"  ("+e1r+")");
+                            routineRecordViewHolder.ft1.setText(f1t+"  ("+f1r+")");
+
                               //----------- FOR 2ND SEMESTER-----------/
 
                             String a2c = Objects.requireNonNull(snapshot.child("A2C").getValue()).toString();
@@ -128,6 +144,20 @@ public class ShowRoutine {
                             String d2r = Objects.requireNonNull(snapshot.child("D2R").getValue()).toString();
                             String e2r = Objects.requireNonNull(snapshot.child("E2R").getValue()).toString();
                             String f2r = Objects.requireNonNull(snapshot.child("F2R").getValue()).toString();
+
+                            routineRecordViewHolder.ac2.setText(a2c);
+                            routineRecordViewHolder.bc2.setText(b2c);
+                            routineRecordViewHolder.cc2.setText(c2c);
+                            routineRecordViewHolder.dc2.setText(d2c);
+                            routineRecordViewHolder.ec2.setText(e2c);
+                            routineRecordViewHolder.fc2.setText(f2c);
+
+                            routineRecordViewHolder.at2.setText(a2t+"  ("+a2r+")");
+                            routineRecordViewHolder.bt2.setText(b2t+"  ("+b2r+")");
+                            routineRecordViewHolder.ct2.setText(c2t+"  ("+c2r+")");
+                            routineRecordViewHolder.dt2.setText(d2t+"  ("+d2r+")");
+                            routineRecordViewHolder.et2.setText(e2t+"  ("+e2r+")");
+                            routineRecordViewHolder.ft2.setText(f2t+"  ("+f2r+")");
 
 
                             //----------- FOR 3RD SEMESTER-----------/
@@ -153,6 +183,20 @@ public class ShowRoutine {
                             String e3r = Objects.requireNonNull(snapshot.child("E3R").getValue()).toString();
                             String f3r = Objects.requireNonNull(snapshot.child("F3R").getValue()).toString();
 
+                            routineRecordViewHolder.ac3.setText(a3c);
+                            routineRecordViewHolder.bc3.setText(b3c);
+                            routineRecordViewHolder.cc3.setText(c3c);
+                            routineRecordViewHolder.dc3.setText(d3c);
+                            routineRecordViewHolder.ec3.setText(e3c);
+                            routineRecordViewHolder.fc3.setText(f3c);
+
+                            routineRecordViewHolder.at3.setText(a3t+"  ("+a3r+")");
+                            routineRecordViewHolder.bt3.setText(b3t+"  ("+b3r+")");
+                            routineRecordViewHolder.ct3.setText(c3t+"  ("+c3r+")");
+                            routineRecordViewHolder.dt3.setText(d3t+"  ("+d3r+")");
+                            routineRecordViewHolder.et3.setText(e3t+"  ("+e3r+")");
+                            routineRecordViewHolder.ft3.setText(f3t+"  ("+f3r+")");
+
 
                             //----------- FOR 4TH SEMESTER-----------/
 
@@ -176,6 +220,20 @@ public class ShowRoutine {
                             String d4r = Objects.requireNonNull(snapshot.child("D4R").getValue()).toString();
                             String e4r = Objects.requireNonNull(snapshot.child("E4R").getValue()).toString();
                             String f4r = Objects.requireNonNull(snapshot.child("F4R").getValue()).toString();
+
+                            routineRecordViewHolder.ac4.setText(a4c);
+                            routineRecordViewHolder.bc4.setText(b4c);
+                            routineRecordViewHolder.cc4.setText(c4c);
+                            routineRecordViewHolder.dc4.setText(d4c);
+                            routineRecordViewHolder.ec4.setText(e4c);
+                            routineRecordViewHolder.fc4.setText(f4c);
+
+                            routineRecordViewHolder.at4.setText(a4t+"  ("+a4r+")");
+                            routineRecordViewHolder.bt4.setText(b4t+"  ("+b4r+")");
+                            routineRecordViewHolder.ct4.setText(c4t+"  ("+c4r+")");
+                            routineRecordViewHolder.dt4.setText(d4t+"  ("+d4r+")");
+                            routineRecordViewHolder.et4.setText(e4t+"  ("+e4r+")");
+                            routineRecordViewHolder.ft4.setText(f4t+"  ("+f4r+")");
 
 
 
@@ -202,6 +260,20 @@ public class ShowRoutine {
                             String e5r = Objects.requireNonNull(snapshot.child("E5R").getValue()).toString();
                             String f5r = Objects.requireNonNull(snapshot.child("F5R").getValue()).toString();
 
+                            routineRecordViewHolder.ac5.setText(a5c);
+                            routineRecordViewHolder.bc5.setText(b5c);
+                            routineRecordViewHolder.cc5.setText(c5c);
+                            routineRecordViewHolder.dc5.setText(d5c);
+                            routineRecordViewHolder.ec5.setText(e5c);
+                            routineRecordViewHolder.fc5.setText(f5c);
+
+                            routineRecordViewHolder.at5.setText(a5t+"  ("+a5r+")");
+                            routineRecordViewHolder.bt5.setText(b5t+"  ("+b5r+")");
+                            routineRecordViewHolder.ct5.setText(c5t+"  ("+c5r+")");
+                            routineRecordViewHolder.dt5.setText(d5t+"  ("+d5r+")");
+                            routineRecordViewHolder.et5.setText(e5t+"  ("+e5r+")");
+                            routineRecordViewHolder.ft5.setText(f5t+"  ("+f5r+")");
+
 
                             //----------- FOR 6TH SEMESTER-----------/
 
@@ -225,6 +297,20 @@ public class ShowRoutine {
                             String d6r = Objects.requireNonNull(snapshot.child("D6R").getValue()).toString();
                             String e6r = Objects.requireNonNull(snapshot.child("E6R").getValue()).toString();
                             String f6r = Objects.requireNonNull(snapshot.child("F6R").getValue()).toString();
+
+                            routineRecordViewHolder.ac6.setText(a6c);
+                            routineRecordViewHolder.bc6.setText(b6c);
+                            routineRecordViewHolder.cc6.setText(c6c);
+                            routineRecordViewHolder.dc6.setText(d6c);
+                            routineRecordViewHolder.ec6.setText(e6c);
+                            routineRecordViewHolder.fc6.setText(f6c);
+
+                            routineRecordViewHolder.at6.setText(a6t+"  ("+a6r+")");
+                            routineRecordViewHolder.bt6.setText(b6t+"  ("+b6r+")");
+                            routineRecordViewHolder.ct6.setText(c6t+"  ("+c6r+")");
+                            routineRecordViewHolder.dt6.setText(d6t+"  ("+d6r+")");
+                            routineRecordViewHolder.et6.setText(e6t+"  ("+e6r+")");
+                            routineRecordViewHolder.ft6.setText(f6t+"  ("+f6r+")");
 
                             //----------- FOR 7TH SEMESTER-----------/
 
