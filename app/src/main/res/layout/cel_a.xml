@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/AC1"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/AT1"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/AC2"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/AT2"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/AC3"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/AT3"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/AC4"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/AT4"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/AC5"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/AT5"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/AC6"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/AT6"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/AC7"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/AT7"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/AC8"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/AT8"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/AC9"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/AT9"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/AC10"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/AT10"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/AC11"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/AT11"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/AC12"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/AT12"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

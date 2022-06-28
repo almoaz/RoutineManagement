@@ -1,5 +1,6 @@
 package com.approxsoft.routinemanagement.RoutineFile;
 
+import android.widget.EditText;
 import android.widget.Spinner;
 
 import java.util.HashMap;
@@ -281,5 +282,17 @@ public class CreateRoutine {
         map.put("E12R",e12R.getSelectedItem().toString());
         map.put("F12R",f12R.getSelectedItem().toString());
 
+    }
+
+    public static void routineTime(EditText aTime, EditText bTime, EditText cTime, EditText dTime, EditText eTime, EditText fTime)
+    {
+        HashMap<String, String> map = new HashMap<>();
+        //----------for 1st semester -----------//
+        map.put("ATime",aTime.getText().toString());
+        map.put("BTime",bTime.getText().toString());
+        map.put("CTime",cTime.getText().toString());
+        map.put("DTime",dTime.getText().toString());
+        map.put("ETime",eTime.getText().toString());
+        map.put("FTime",fTime.getText().toString());
     }
 }

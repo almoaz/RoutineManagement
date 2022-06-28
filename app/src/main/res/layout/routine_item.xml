@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/White"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/day_name"
+            android:layout_width="65dp"
+            android:layout_height="425dp"
+            android:text="@string/sun"
+            android:textColor="@color/White"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="@drawable/bg_box_green"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cat1"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:text="@string/_1st_semester"
+                android:textColor="@color/PageBarColor"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@drawable/green_box"/>
+
+            <TextView
+                android:id="@+id/cat2"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:text="@string/_2nd_semester"
+                android:textColor="@color/PageBarColor"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@drawable/green_box"/>
+
+
+            <TextView
+                android:id="@+id/cat3"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:text="@string/_3rd_semester"
+                android:textColor="@color/PageBarColor"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@drawable/green_box"/>
+
+
+            <TextView
+                android:id="@+id/cat4"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:text="@string/_4th_semester"
+                android:textColor="@color/PageBarColor"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@drawable/green_box"/>
+
+
+            <TextView
+                android:id="@+id/cat5"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:text="@string/_5th_semester"
+                android:textColor="@color/PageBarColor"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@drawable/green_box"/>
+
+            <TextView
+                android:id="@+id/cat6"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:text="@string/_6th_semester"
+                android:textColor="@color/PageBarColor"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@drawable/green_box"/>
+
+            <TextView
+                android:id="@+id/cat7"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:text="@string/_7th_semester"
+                android:textColor="@color/PageBarColor"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@drawable/green_box"/>
+
+            <TextView
+                android:id="@+id/cat8"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:text="@string/_8th_semester"
+                android:textColor="@color/PageBarColor"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@drawable/green_box"/>
+
+            <TextView
+                android:id="@+id/cat9"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:text="@string/_9th_semester"
+                android:textColor="@color/PageBarColor"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@drawable/green_box"/>
+
+            <TextView
+                android:id="@+id/cat10"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:text="@string/_10th_semester"
+                android:textColor="@color/PageBarColor"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@drawable/green_box"/>
+
+            <TextView
+                android:id="@+id/cat11"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:text="@string/_11th_semester"
+                android:textColor="@color/PageBarColor"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@drawable/green_box"/>
+
+            <TextView
+                android:id="@+id/cat12"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:text="@string/_12th_semester"
+                android:textColor="@color/PageBarColor"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@drawable/green_box"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                layout="@layout/cel_a">
+
+            </include>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                layout="@layout/cel_b">
+
+            </include>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                layout="@layout/cel_c">
+
+            </include>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                layout="@layout/cel_d">
+
+            </include>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                layout="@layout/cel_e">
+
+            </include>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                layout="@layout/cel_f">
+
+            </include>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

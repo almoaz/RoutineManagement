@@ -1946,6 +1946,9 @@ public class RoutineActivity extends AppCompatActivity {
         uploadRoutine.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                CreateRoutine.routineTime(aTime, bTime, cTime, dTime, eTime, fTime);
+
                 CreateRoutine.createRoutine(sat,A1stC,B1stC,C1stC,D1stC,E1stC,F1stC, A1stT,B1stT,C1stT,D1stT,E1stT,F1stT, A1stR,B1stR,C1stR,D1stR,E1stR,F1stR,
                         A2ndC,B2C,C2C,D2C,E2C,F2C, A2T,B2T,C2T,D2T,E2T,F2T, A2R,B2R,C2R,D2R,E2R,F2R,
                         A3rdC,B3C,C3C,D3C,E3C,F3C, A3T,B3T,C3T,D3T,E3T,F3T, A3R,B3R,C3R,D3R,E3R,F3R,

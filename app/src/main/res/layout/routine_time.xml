@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="16dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_box_green"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:background="@drawable/bg_category_item"
+            android:gravity="center"
+            android:text="Day"
+            android:textColor="@color/White"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_box_green"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_category_item"
+                android:gravity="center"
+                android:text="Time"
+                android:textColor="@color/White"
+                android:textSize="20sp" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/routine_condition2"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_box_green"
+                    android:backgroundTint="@color/White"
+                    android:gravity="center"
+                    android:text="Select"
+                    android:textColor="@color/Green"
+                    android:textColorHint="@color/Black50"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_box_green"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/a_time"
+                    android:layout_width="210dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_green_border_white_solid"
+                    android:gravity="center"
+                    android:text="09:30 - 11:00"
+                    android:textColor="@color/PageBarColor"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_box_green"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_category_item"
+                    android:gravity="center"
+                    android:text="Module"
+                    android:textColor="@color/White"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_category_item"
+                    android:gravity="center"
+                    android:text="Faculty"
+                    android:textColor="@color/White"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_box_green"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/b_time"
+                    android:layout_width="210dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_green_border_white_solid"
+                    android:gravity="center"
+                    android:text="09:30 - 11:00"
+                    android:textColor="@color/PageBarColor"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_box_green"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_category_item"
+                    android:gravity="center"
+                    android:text="Module"
+                    android:textColor="@color/White"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_category_item"
+                    android:gravity="center"
+                    android:text="Faculty"
+                    android:textColor="@color/White"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_box_green"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/c_time"
+                    android:layout_width="210dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_green_border_white_solid"
+                    android:gravity="center"
+                    android:text="09:30 - 11:00"
+                    android:textColor="@color/PageBarColor"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_box_green"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_category_item"
+                    android:gravity="center"
+                    android:text="Module"
+                    android:textColor="@color/White"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_category_item"
+                    android:gravity="center"
+                    android:text="Faculty"
+                    android:textColor="@color/White"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_box_green"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/d_time"
+                    android:layout_width="210dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_green_border_white_solid"
+                    android:gravity="center"
+                    android:text="09:30 - 11:00"
+                    android:textColor="@color/PageBarColor"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_box_green"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_category_item"
+                    android:gravity="center"
+                    android:text="Module"
+                    android:textColor="@color/White"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_category_item"
+                    android:gravity="center"
+                    android:text="Faculty"
+                    android:textColor="@color/White"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_box_green"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/e_time"
+                    android:layout_width="210dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_green_border_white_solid"
+                    android:gravity="center"
+                    android:text="09:30 - 11:00"
+                    android:textColor="@color/PageBarColor"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_box_green"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_category_item"
+                    android:gravity="center"
+                    android:text="Module"
+                    android:textColor="@color/White"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_category_item"
+                    android:gravity="center"
+                    android:text="Faculty"
+                    android:textColor="@color/White"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_box_green"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/f_time"
+                    android:layout_width="210dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_green_border_white_solid"
+                    android:gravity="center"
+                    android:text="09:30 - 11:00"
+                    android:textColor="@color/PageBarColor"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_box_green"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_category_item"
+                    android:gravity="center"
+                    android:text="Module"
+                    android:textColor="@color/White"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_category_item"
+                    android:gravity="center"
+                    android:text="Faculty"
+                    android:textColor="@color/White"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

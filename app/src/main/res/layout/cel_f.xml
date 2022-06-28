@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/FC1"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/FT1"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/FC2"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/FT2"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/FC3"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/FT3"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/FC4"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/FT4"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/FC5"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/FT5"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/FC6"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/FT6"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/FC7"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/FT7"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/FC8"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/FT8"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/FC9"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/FT9"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/FC10"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/FT10"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/FC11"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/FT11"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/FC12"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/FT12"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:textColor="@color/PageBarColor"
+                android:background="@drawable/green_box"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -11,6 +11,13 @@
         <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/activity_course_offer2.xml" value="0.3536458333333333" />
         <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/activity_main.xml" value="0.5526041666666667" />
         <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/activity_routine.xml" value="0.5375" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/activity_routine_show.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/cel_a.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/cel_b.xml" value="0.5515625" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/cel_c.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/cel_d.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/cel_e.xml" value="0.5515625" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/cel_f.xml" value="0.5515625" />
         <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/col1.xml" value="0.5" />
         <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/col2.xml" value="0.5515625" />
         <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/col3.xml" value="1.3270676691729324" />
@@ -25,7 +32,7 @@
         <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/fr_col5.xml" value="0.5526041666666667" />
         <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/fr_col6.xml" value="0.5526041666666667" />
         <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/fr_routine_cell.xml" value="0.5526041666666667" />
-        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/home_page.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/home_page.xml" value="0.5" />
         <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/mo_cal3.xml" value="0.5515625" />
         <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/mo_cal4.xml" value="0.5526041666666667" />
         <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/mo_cal5.xml" value="0.5526041666666667" />
@@ -38,6 +45,8 @@
         <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/mo_col6.xml" value="0.5526041666666667" />
         <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/mo_routine_cell.xml" value="0.5515625" />
         <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/routine_cell.xml" value="0.5526041666666667" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/routine_item.xml" value="0.54" />
+        <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/routine_time.xml" value="0.5484375" />
         <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/sa_col1.xml" value="0.5526041666666667" />
         <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/sa_col2.xml" value="0.5526041666666667" />
         <entry key="..\:/Users/Mahfuz Salehin Moaz/AndroidStudioProjects/RoutineManagement/app/src/main/res/layout/sa_col3.xml" value="0.5526041666666667" />
