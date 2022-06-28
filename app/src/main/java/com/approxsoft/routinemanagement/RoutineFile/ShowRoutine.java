@@ -1,17 +1,400 @@
 package com.approxsoft.routinemanagement.RoutineFile;
 
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.approxsoft.routinemanagement.R;
+import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.Objects;
 
 public class ShowRoutine {
+    static DatabaseReference routineReference = FirebaseDatabase.getInstance().getReference();
 
     public static void showRoutine(TextView timeA, TextView timeB, TextView timeC, TextView timeD, TextView timeE, TextView timeF, RecyclerView routineView){
 
     }
+
+
+    private static void DisplayAllRoutineRecords(String s, RecyclerView routineView,TextView time1,TextView time2, TextView time3,TextView time4,TextView time5,TextView time6,TextView time7,TextView routineFor) {
+
+        Query query = routineReference.child("Department Of CSE And CSIT").child("Routine").orderByChild("count")
+                .startAt(s).endAt(s + "\uf8ff");// haven't implemented a proper list sort yet.
+
+        FirebaseRecyclerOptions<RoutineData> options = new FirebaseRecyclerOptions.Builder<RoutineData>().setQuery(query, RoutineData.class).build();
+
+        FirebaseRecyclerAdapter adapter = new FirebaseRecyclerAdapter<RoutineData, RoutineRecordViewHolder>(options) {
+            @Override
+            protected void onBindViewHolder(@NonNull final RoutineRecordViewHolder routineRecordViewHolder, final int position, @NonNull final RoutineData routineData) {
+
+                String usersIDs = getRef(position).getKey();
+
+                routineReference.child("Department Of CSE And CSIT").child("Routine").addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot)
+                    {
+                        if (snapshot.hasChild("Time"))
+                        {
+                            String t1 = Objects.requireNonNull(snapshot.child("Time").child("aTime").getValue()).toString();
+                            String t2 = Objects.requireNonNull(snapshot.child("Time").child("bTime").getValue()).toString();
+                            String t3 = Objects.requireNonNull(snapshot.child("Time").child("cTime").getValue()).toString();
+                            String t4 = Objects.requireNonNull(snapshot.child("Time").child("dTime").getValue()).toString();
+                            String t5 = Objects.requireNonNull(snapshot.child("Time").child("eTime").getValue()).toString();
+                            String t6 = Objects.requireNonNull(snapshot.child("Time").child("fTime").getValue()).toString();
+                            String t7 = Objects.requireNonNull(snapshot.child("Time").child("gTime").getValue()).toString();
+
+
+                            time1.setText(t1);
+                            time2.setText(t2);
+                            time3.setText(t3);
+                            time4.setText(t4);
+                            time5.setText(t5);
+                            time6.setText(t6);
+                            time7.setText(t7);
+
+
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
+
+                routineReference.child("Department Of CSE And CSIT").child("Routine").child(usersIDs).addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot)
+                    {
+                        if (snapshot.exists()) {
+
+                            String routine = snapshot.child("routineFor").getValue().toString();
+
+                            routineFor.setText(routine);
+                            //----------- FOR 1ST SEMESTER-----------/
+
+                            String a1c = Objects.requireNonNull(snapshot.child("A1C").getValue()).toString();
+                            String b1c = Objects.requireNonNull(snapshot.child("B1C").getValue()).toString();
+                            String c1c = Objects.requireNonNull(snapshot.child("C1C").getValue()).toString();
+                            String d1c = Objects.requireNonNull(snapshot.child("D1C").getValue()).toString();
+                            String e1c = Objects.requireNonNull(snapshot.child("E1C").getValue()).toString();
+                            String f1c = Objects.requireNonNull(snapshot.child("F1C").getValue()).toString();
+
+                            String a1t = Objects.requireNonNull(snapshot.child("A1T").getValue()).toString();
+                            String b1t = Objects.requireNonNull(snapshot.child("B1T").getValue()).toString();
+                            String c1t = Objects.requireNonNull(snapshot.child("C1T").getValue()).toString();
+                            String d1t = Objects.requireNonNull(snapshot.child("D1T").getValue()).toString();
+                            String e1t = Objects.requireNonNull(snapshot.child("E1T").getValue()).toString();
+                            String f1t = Objects.requireNonNull(snapshot.child("F1T").getValue()).toString();
+
+                            String a1r = Objects.requireNonNull(snapshot.child("A1R").getValue()).toString();
+                            String b1r = Objects.requireNonNull(snapshot.child("B1R").getValue()).toString();
+                            String c1r = Objects.requireNonNull(snapshot.child("C1R").getValue()).toString();
+                            String d1r = Objects.requireNonNull(snapshot.child("D1R").getValue()).toString();
+                            String e1r = Objects.requireNonNull(snapshot.child("E1R").getValue()).toString();
+                            String f1r = Objects.requireNonNull(snapshot.child("F1R").getValue()).toString();
+
+                              //----------- FOR 2ND SEMESTER-----------/
+
+                            String a2c = Objects.requireNonNull(snapshot.child("A2C").getValue()).toString();
+                            String b2c = Objects.requireNonNull(snapshot.child("B2C").getValue()).toString();
+                            String c2c = Objects.requireNonNull(snapshot.child("C2C").getValue()).toString();
+                            String d2c = Objects.requireNonNull(snapshot.child("D2C").getValue()).toString();
+                            String e2c = Objects.requireNonNull(snapshot.child("E2C").getValue()).toString();
+                            String f2c = Objects.requireNonNull(snapshot.child("F2C").getValue()).toString();
+
+                            String a2t = Objects.requireNonNull(snapshot.child("A2T").getValue()).toString();
+                            String b2t = Objects.requireNonNull(snapshot.child("B2T").getValue()).toString();
+                            String c2t = Objects.requireNonNull(snapshot.child("C2T").getValue()).toString();
+                            String d2t = Objects.requireNonNull(snapshot.child("D2T").getValue()).toString();
+                            String e2t = Objects.requireNonNull(snapshot.child("E2T").getValue()).toString();
+                            String f2t = Objects.requireNonNull(snapshot.child("F2T").getValue()).toString();
+
+                            String a2r = Objects.requireNonNull(snapshot.child("A2R").getValue()).toString();
+                            String b2r = Objects.requireNonNull(snapshot.child("B2R").getValue()).toString();
+                            String c2r = Objects.requireNonNull(snapshot.child("C2R").getValue()).toString();
+                            String d2r = Objects.requireNonNull(snapshot.child("D2R").getValue()).toString();
+                            String e2r = Objects.requireNonNull(snapshot.child("E2R").getValue()).toString();
+                            String f2r = Objects.requireNonNull(snapshot.child("F2R").getValue()).toString();
+
+
+                            //----------- FOR 3RD SEMESTER-----------/
+
+                            String a3c = Objects.requireNonNull(snapshot.child("A3C").getValue()).toString();
+                            String b3c = Objects.requireNonNull(snapshot.child("B3C").getValue()).toString();
+                            String c3c = Objects.requireNonNull(snapshot.child("C3C").getValue()).toString();
+                            String d3c = Objects.requireNonNull(snapshot.child("D3C").getValue()).toString();
+                            String e3c = Objects.requireNonNull(snapshot.child("E3C").getValue()).toString();
+                            String f3c = Objects.requireNonNull(snapshot.child("F3C").getValue()).toString();
+
+                            String a3t = Objects.requireNonNull(snapshot.child("A3T").getValue()).toString();
+                            String b3t = Objects.requireNonNull(snapshot.child("B3T").getValue()).toString();
+                            String c3t = Objects.requireNonNull(snapshot.child("C3T").getValue()).toString();
+                            String d3t = Objects.requireNonNull(snapshot.child("D3T").getValue()).toString();
+                            String e3t = Objects.requireNonNull(snapshot.child("E3T").getValue()).toString();
+                            String f3t = Objects.requireNonNull(snapshot.child("F3T").getValue()).toString();
+
+                            String a3r = Objects.requireNonNull(snapshot.child("A3R").getValue()).toString();
+                            String b3r = Objects.requireNonNull(snapshot.child("B3R").getValue()).toString();
+                            String c3r = Objects.requireNonNull(snapshot.child("C3R").getValue()).toString();
+                            String d3r = Objects.requireNonNull(snapshot.child("D3R").getValue()).toString();
+                            String e3r = Objects.requireNonNull(snapshot.child("E3R").getValue()).toString();
+                            String f3r = Objects.requireNonNull(snapshot.child("F3R").getValue()).toString();
+
+
+                            //----------- FOR 4TH SEMESTER-----------/
+
+                            String a4c = Objects.requireNonNull(snapshot.child("A4C").getValue()).toString();
+                            String b4c = Objects.requireNonNull(snapshot.child("B4C").getValue()).toString();
+                            String c4c = Objects.requireNonNull(snapshot.child("C4C").getValue()).toString();
+                            String d4c = Objects.requireNonNull(snapshot.child("D4C").getValue()).toString();
+                            String e4c = Objects.requireNonNull(snapshot.child("E4C").getValue()).toString();
+                            String f4c = Objects.requireNonNull(snapshot.child("F4C").getValue()).toString();
+
+                            String a4t = Objects.requireNonNull(snapshot.child("A4T").getValue()).toString();
+                            String b4t = Objects.requireNonNull(snapshot.child("B4T").getValue()).toString();
+                            String c4t = Objects.requireNonNull(snapshot.child("C4T").getValue()).toString();
+                            String d4t = Objects.requireNonNull(snapshot.child("D4T").getValue()).toString();
+                            String e4t = Objects.requireNonNull(snapshot.child("E4T").getValue()).toString();
+                            String f4t = Objects.requireNonNull(snapshot.child("F4T").getValue()).toString();
+
+                            String a4r = Objects.requireNonNull(snapshot.child("A4R").getValue()).toString();
+                            String b4r = Objects.requireNonNull(snapshot.child("B4R").getValue()).toString();
+                            String c4r = Objects.requireNonNull(snapshot.child("C4R").getValue()).toString();
+                            String d4r = Objects.requireNonNull(snapshot.child("D4R").getValue()).toString();
+                            String e4r = Objects.requireNonNull(snapshot.child("E4R").getValue()).toString();
+                            String f4r = Objects.requireNonNull(snapshot.child("F4R").getValue()).toString();
+
+
+
+                            //----------- FOR 5TH SEMESTER-----------/
+
+                            String a5c = Objects.requireNonNull(snapshot.child("A5C").getValue()).toString();
+                            String b5c = Objects.requireNonNull(snapshot.child("B5C").getValue()).toString();
+                            String c5c = Objects.requireNonNull(snapshot.child("C5C").getValue()).toString();
+                            String d5c = Objects.requireNonNull(snapshot.child("D5C").getValue()).toString();
+                            String e5c = Objects.requireNonNull(snapshot.child("E5C").getValue()).toString();
+                            String f5c = Objects.requireNonNull(snapshot.child("F5C").getValue()).toString();
+
+                            String a5t = Objects.requireNonNull(snapshot.child("A5T").getValue()).toString();
+                            String b5t = Objects.requireNonNull(snapshot.child("B5T").getValue()).toString();
+                            String c5t = Objects.requireNonNull(snapshot.child("C5T").getValue()).toString();
+                            String d5t = Objects.requireNonNull(snapshot.child("D5T").getValue()).toString();
+                            String e5t = Objects.requireNonNull(snapshot.child("E5T").getValue()).toString();
+                            String f5t = Objects.requireNonNull(snapshot.child("F5T").getValue()).toString();
+
+                            String a5r = Objects.requireNonNull(snapshot.child("A5R").getValue()).toString();
+                            String b5r = Objects.requireNonNull(snapshot.child("B5R").getValue()).toString();
+                            String c5r = Objects.requireNonNull(snapshot.child("C5R").getValue()).toString();
+                            String d5r = Objects.requireNonNull(snapshot.child("D5R").getValue()).toString();
+                            String e5r = Objects.requireNonNull(snapshot.child("E5R").getValue()).toString();
+                            String f5r = Objects.requireNonNull(snapshot.child("F5R").getValue()).toString();
+
+
+                            //----------- FOR 6TH SEMESTER-----------/
+
+                            String a6c = Objects.requireNonNull(snapshot.child("A6C").getValue()).toString();
+                            String b6c = Objects.requireNonNull(snapshot.child("B6C").getValue()).toString();
+                            String c6c = Objects.requireNonNull(snapshot.child("C6C").getValue()).toString();
+                            String d6c = Objects.requireNonNull(snapshot.child("D6C").getValue()).toString();
+                            String e6c = Objects.requireNonNull(snapshot.child("E6C").getValue()).toString();
+                            String f6c = Objects.requireNonNull(snapshot.child("F6C").getValue()).toString();
+
+                            String a6t = Objects.requireNonNull(snapshot.child("A6T").getValue()).toString();
+                            String b6t = Objects.requireNonNull(snapshot.child("B6T").getValue()).toString();
+                            String c6t = Objects.requireNonNull(snapshot.child("C6T").getValue()).toString();
+                            String d6t = Objects.requireNonNull(snapshot.child("D6T").getValue()).toString();
+                            String e6t = Objects.requireNonNull(snapshot.child("E6T").getValue()).toString();
+                            String f6t = Objects.requireNonNull(snapshot.child("F6T").getValue()).toString();
+
+                            String a6r = Objects.requireNonNull(snapshot.child("A6R").getValue()).toString();
+                            String b6r = Objects.requireNonNull(snapshot.child("B6R").getValue()).toString();
+                            String c6r = Objects.requireNonNull(snapshot.child("C6R").getValue()).toString();
+                            String d6r = Objects.requireNonNull(snapshot.child("D6R").getValue()).toString();
+                            String e6r = Objects.requireNonNull(snapshot.child("E6R").getValue()).toString();
+                            String f6r = Objects.requireNonNull(snapshot.child("F6R").getValue()).toString();
+
+                            //----------- FOR 7TH SEMESTER-----------/
+
+                            String a7c = Objects.requireNonNull(snapshot.child("A7C").getValue()).toString();
+                            String b7c = Objects.requireNonNull(snapshot.child("B7C").getValue()).toString();
+                            String c7c = Objects.requireNonNull(snapshot.child("C7C").getValue()).toString();
+                            String d7c = Objects.requireNonNull(snapshot.child("D7C").getValue()).toString();
+                            String e7c = Objects.requireNonNull(snapshot.child("E7C").getValue()).toString();
+                            String f7c = Objects.requireNonNull(snapshot.child("F7C").getValue()).toString();
+
+                            String a7t = Objects.requireNonNull(snapshot.child("A7T").getValue()).toString();
+                            String b7t = Objects.requireNonNull(snapshot.child("B7T").getValue()).toString();
+                            String c7t = Objects.requireNonNull(snapshot.child("C7T").getValue()).toString();
+                            String d7t = Objects.requireNonNull(snapshot.child("D7T").getValue()).toString();
+                            String e7t = Objects.requireNonNull(snapshot.child("E7T").getValue()).toString();
+                            String f7t = Objects.requireNonNull(snapshot.child("F7T").getValue()).toString();
+
+                            String a7r = Objects.requireNonNull(snapshot.child("A7R").getValue()).toString();
+                            String b7r = Objects.requireNonNull(snapshot.child("B7R").getValue()).toString();
+                            String c7r = Objects.requireNonNull(snapshot.child("C7R").getValue()).toString();
+                            String d7r = Objects.requireNonNull(snapshot.child("D7R").getValue()).toString();
+                            String e7r = Objects.requireNonNull(snapshot.child("E7R").getValue()).toString();
+                            String f7r = Objects.requireNonNull(snapshot.child("F7R").getValue()).toString();
+
+                            //----------- FOR 8TH SEMESTER-----------/
+
+                            String a8c = Objects.requireNonNull(snapshot.child("A8C").getValue()).toString();
+                            String b8c = Objects.requireNonNull(snapshot.child("B8C").getValue()).toString();
+                            String c8c = Objects.requireNonNull(snapshot.child("C8C").getValue()).toString();
+                            String d8c = Objects.requireNonNull(snapshot.child("D8C").getValue()).toString();
+                            String e8c = Objects.requireNonNull(snapshot.child("E8C").getValue()).toString();
+                            String f8c = Objects.requireNonNull(snapshot.child("F8C").getValue()).toString();
+
+                            String a8t = Objects.requireNonNull(snapshot.child("A8T").getValue()).toString();
+                            String b8t = Objects.requireNonNull(snapshot.child("B8T").getValue()).toString();
+                            String c8t = Objects.requireNonNull(snapshot.child("C8T").getValue()).toString();
+                            String d8t = Objects.requireNonNull(snapshot.child("D8T").getValue()).toString();
+                            String e8t = Objects.requireNonNull(snapshot.child("E8T").getValue()).toString();
+                            String f8t = Objects.requireNonNull(snapshot.child("F8T").getValue()).toString();
+
+                            String a8r = Objects.requireNonNull(snapshot.child("A8R").getValue()).toString();
+                            String b8r = Objects.requireNonNull(snapshot.child("B8R").getValue()).toString();
+                            String c8r = Objects.requireNonNull(snapshot.child("C8R").getValue()).toString();
+                            String d8r = Objects.requireNonNull(snapshot.child("D8R").getValue()).toString();
+                            String e8r = Objects.requireNonNull(snapshot.child("E8R").getValue()).toString();
+                            String f8r = Objects.requireNonNull(snapshot.child("F8R").getValue()).toString();
+
+                            //----------- FOR 9TH SEMESTER-----------/
+
+                            String a9c = Objects.requireNonNull(snapshot.child("A9C").getValue()).toString();
+                            String b9c = Objects.requireNonNull(snapshot.child("B9C").getValue()).toString();
+                            String c9c = Objects.requireNonNull(snapshot.child("C9C").getValue()).toString();
+                            String d9c = Objects.requireNonNull(snapshot.child("D9C").getValue()).toString();
+                            String e9c = Objects.requireNonNull(snapshot.child("E9C").getValue()).toString();
+                            String f9c = Objects.requireNonNull(snapshot.child("F9C").getValue()).toString();
+
+                            String a9t = Objects.requireNonNull(snapshot.child("A9T").getValue()).toString();
+                            String b9t = Objects.requireNonNull(snapshot.child("B9T").getValue()).toString();
+                            String c9t = Objects.requireNonNull(snapshot.child("C9T").getValue()).toString();
+                            String d9t = Objects.requireNonNull(snapshot.child("D9T").getValue()).toString();
+                            String e9t = Objects.requireNonNull(snapshot.child("E9T").getValue()).toString();
+                            String f9t = Objects.requireNonNull(snapshot.child("F9T").getValue()).toString();
+
+                            String a9r = Objects.requireNonNull(snapshot.child("A9R").getValue()).toString();
+                            String b9r = Objects.requireNonNull(snapshot.child("B9R").getValue()).toString();
+                            String c9r = Objects.requireNonNull(snapshot.child("C9R").getValue()).toString();
+                            String d9r = Objects.requireNonNull(snapshot.child("D9R").getValue()).toString();
+                            String e9r = Objects.requireNonNull(snapshot.child("E9R").getValue()).toString();
+                            String f9r = Objects.requireNonNull(snapshot.child("F9R").getValue()).toString();
+
+
+                            //----------- FOR 10TH SEMESTER-----------/
+
+                            String a10c = Objects.requireNonNull(snapshot.child("A10C").getValue()).toString();
+                            String b10c = Objects.requireNonNull(snapshot.child("B10C").getValue()).toString();
+                            String c10c = Objects.requireNonNull(snapshot.child("C10C").getValue()).toString();
+                            String d10c = Objects.requireNonNull(snapshot.child("D10C").getValue()).toString();
+                            String e10c = Objects.requireNonNull(snapshot.child("E10C").getValue()).toString();
+                            String f10c = Objects.requireNonNull(snapshot.child("F10C").getValue()).toString();
+
+                            String a10t = Objects.requireNonNull(snapshot.child("A10T").getValue()).toString();
+                            String b10t = Objects.requireNonNull(snapshot.child("B10T").getValue()).toString();
+                            String c10t = Objects.requireNonNull(snapshot.child("C10T").getValue()).toString();
+                            String d10t = Objects.requireNonNull(snapshot.child("D10T").getValue()).toString();
+                            String e10t = Objects.requireNonNull(snapshot.child("E10T").getValue()).toString();
+                            String f10t = Objects.requireNonNull(snapshot.child("F10T").getValue()).toString();
+
+                            String a10r = Objects.requireNonNull(snapshot.child("A10R").getValue()).toString();
+                            String b10r = Objects.requireNonNull(snapshot.child("B10R").getValue()).toString();
+                            String c10r = Objects.requireNonNull(snapshot.child("C10R").getValue()).toString();
+                            String d10r = Objects.requireNonNull(snapshot.child("D10R").getValue()).toString();
+                            String e10r = Objects.requireNonNull(snapshot.child("E10R").getValue()).toString();
+                            String f10r = Objects.requireNonNull(snapshot.child("F10R").getValue()).toString();
+
+
+                            //----------- FOR 11TH SEMESTER-----------/
+
+                            String a11c = Objects.requireNonNull(snapshot.child("A11C").getValue()).toString();
+                            String b11c = Objects.requireNonNull(snapshot.child("B11C").getValue()).toString();
+                            String c11c = Objects.requireNonNull(snapshot.child("C11C").getValue()).toString();
+                            String d11c = Objects.requireNonNull(snapshot.child("D11C").getValue()).toString();
+                            String e11c = Objects.requireNonNull(snapshot.child("E11C").getValue()).toString();
+                            String f11c = Objects.requireNonNull(snapshot.child("F11C").getValue()).toString();
+
+                            String a11t = Objects.requireNonNull(snapshot.child("A11T").getValue()).toString();
+                            String b11t = Objects.requireNonNull(snapshot.child("B11T").getValue()).toString();
+                            String c11t = Objects.requireNonNull(snapshot.child("C11T").getValue()).toString();
+                            String d11t = Objects.requireNonNull(snapshot.child("D11T").getValue()).toString();
+                            String e11t = Objects.requireNonNull(snapshot.child("E11T").getValue()).toString();
+                            String f11t = Objects.requireNonNull(snapshot.child("F11T").getValue()).toString();
+
+                            String a11r = Objects.requireNonNull(snapshot.child("A11R").getValue()).toString();
+                            String b11r = Objects.requireNonNull(snapshot.child("B11R").getValue()).toString();
+                            String c11r = Objects.requireNonNull(snapshot.child("C11R").getValue()).toString();
+                            String d11r = Objects.requireNonNull(snapshot.child("D11R").getValue()).toString();
+                            String e11r = Objects.requireNonNull(snapshot.child("E11R").getValue()).toString();
+                            String f11r = Objects.requireNonNull(snapshot.child("F11R").getValue()).toString();
+
+
+                            //----------- FOR 12TH SEMESTER-----------/
+
+                            String a12c = Objects.requireNonNull(snapshot.child("A12C").getValue()).toString();
+                            String b12c = Objects.requireNonNull(snapshot.child("B12C").getValue()).toString();
+                            String c12c = Objects.requireNonNull(snapshot.child("C12C").getValue()).toString();
+                            String d12c = Objects.requireNonNull(snapshot.child("D12C").getValue()).toString();
+                            String e12c = Objects.requireNonNull(snapshot.child("E12C").getValue()).toString();
+                            String f12c = Objects.requireNonNull(snapshot.child("F12C").getValue()).toString();
+
+                            String a12t = Objects.requireNonNull(snapshot.child("A12T").getValue()).toString();
+                            String b12t = Objects.requireNonNull(snapshot.child("B12T").getValue()).toString();
+                            String c12t = Objects.requireNonNull(snapshot.child("C12T").getValue()).toString();
+                            String d12t = Objects.requireNonNull(snapshot.child("D12T").getValue()).toString();
+                            String e12t = Objects.requireNonNull(snapshot.child("E12T").getValue()).toString();
+                            String f12t = Objects.requireNonNull(snapshot.child("F12T").getValue()).toString();
+
+                            String a12r = Objects.requireNonNull(snapshot.child("A12R").getValue()).toString();
+                            String b12r = Objects.requireNonNull(snapshot.child("B12R").getValue()).toString();
+                            String c12r = Objects.requireNonNull(snapshot.child("C12R").getValue()).toString();
+                            String d12r = Objects.requireNonNull(snapshot.child("D12R").getValue()).toString();
+                            String e12r = Objects.requireNonNull(snapshot.child("E12R").getValue()).toString();
+                            String f12r = Objects.requireNonNull(snapshot.child("F12R").getValue()).toString();
+
+
+
+                        }
+
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
+
+
+
+
+
+            }
+
+            public RoutineRecordViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+                View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.routine_item, parent ,false);
+                return new RoutineRecordViewHolder(view);
+            }
+        };
+        adapter.startListening();
+        routineView.setAdapter(adapter);
+
+    }
+
 
 
 

@@ -288,11 +288,11 @@ public class CreateRoutine {
     {
         HashMap<String, String> map = new HashMap<>();
         //----------for 1st semester -----------//
-        map.put("ATime",aTime.getText().toString());
-        map.put("BTime",bTime.getText().toString());
-        map.put("CTime",cTime.getText().toString());
-        map.put("DTime",dTime.getText().toString());
-        map.put("ETime",eTime.getText().toString());
-        map.put("FTime",fTime.getText().toString());
+        map.put("aTime",aTime.getText().toString());
+        map.put("bTime",bTime.getText().toString());
+        map.put("cTime",cTime.getText().toString());
+        map.put("dTime",dTime.getText().toString());
+        map.put("eTime",eTime.getText().toString());
+        map.put("fTime",fTime.getText().toString());
     }
 }
