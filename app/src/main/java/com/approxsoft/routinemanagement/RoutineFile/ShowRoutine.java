@@ -26,10 +26,11 @@ public class ShowRoutine {
 
     public static void showRoutine(TextView timeA, TextView timeB, TextView timeC, TextView timeD, TextView timeE, TextView timeF, RecyclerView routineView){
 
+        DisplayAllRoutineRecords("", routineView,timeA,timeB,timeC,timeD,timeE,timeF);
     }
 
 
-    private static void DisplayAllRoutineRecords(String s, RecyclerView routineView,TextView time1,TextView time2, TextView time3,TextView time4,TextView time5,TextView time6,TextView time7,TextView routineFor) {
+    private static void DisplayAllRoutineRecords(String s, RecyclerView routineView, TextView timeA, TextView timeB, TextView timeC, TextView timeD, TextView timeE, TextView timeF) {
 
         Query query = routineReference.child("Department Of CSE And CSIT").child("Routine").orderByChild("count")
                 .startAt(s).endAt(s + "\uf8ff");// haven't implemented a proper list sort yet.
@@ -54,16 +55,15 @@ public class ShowRoutine {
                             String t4 = Objects.requireNonNull(snapshot.child("Time").child("dTime").getValue()).toString();
                             String t5 = Objects.requireNonNull(snapshot.child("Time").child("eTime").getValue()).toString();
                             String t6 = Objects.requireNonNull(snapshot.child("Time").child("fTime").getValue()).toString();
-                            String t7 = Objects.requireNonNull(snapshot.child("Time").child("gTime").getValue()).toString();
 
 
-                            time1.setText(t1);
-                            time2.setText(t2);
-                            time3.setText(t3);
-                            time4.setText(t4);
-                            time5.setText(t5);
-                            time6.setText(t6);
-                            time7.setText(t7);
+                            timeA.setText(t1);
+                            timeB.setText(t2);
+                            timeC.setText(t3);
+                            timeD.setText(t4);
+                            timeE.setText(t5);
+                            timeF.setText(t6);
+
 
 
                         }
@@ -84,7 +84,6 @@ public class ShowRoutine {
 
                             String routine = snapshot.child("routineFor").getValue().toString();
 
-                            routineFor.setText(routine);
                             //----------- FOR 1ST SEMESTER-----------/
 
                             String a1c = Objects.requireNonNull(snapshot.child("A1C").getValue()).toString();
@@ -335,6 +334,20 @@ public class ShowRoutine {
                             String e7r = Objects.requireNonNull(snapshot.child("E7R").getValue()).toString();
                             String f7r = Objects.requireNonNull(snapshot.child("F7R").getValue()).toString();
 
+                            routineRecordViewHolder.ac7.setText(a7c);
+                            routineRecordViewHolder.bc7.setText(b7c);
+                            routineRecordViewHolder.cc7.setText(c7c);
+                            routineRecordViewHolder.dc7.setText(d7c);
+                            routineRecordViewHolder.ec7.setText(e7c);
+                            routineRecordViewHolder.fc7.setText(f7c);
+
+                            routineRecordViewHolder.at7.setText(a7t+"  ("+a7r+")");
+                            routineRecordViewHolder.bt7.setText(b7t+"  ("+b7r+")");
+                            routineRecordViewHolder.ct7.setText(c7t+"  ("+c7r+")");
+                            routineRecordViewHolder.dt7.setText(d7t+"  ("+d7r+")");
+                            routineRecordViewHolder.et7.setText(e7t+"  ("+e7r+")");
+                            routineRecordViewHolder.ft7.setText(f7t+"  ("+f7r+")");
+
                             //----------- FOR 8TH SEMESTER-----------/
 
                             String a8c = Objects.requireNonNull(snapshot.child("A8C").getValue()).toString();
@@ -358,6 +371,20 @@ public class ShowRoutine {
                             String e8r = Objects.requireNonNull(snapshot.child("E8R").getValue()).toString();
                             String f8r = Objects.requireNonNull(snapshot.child("F8R").getValue()).toString();
 
+                            routineRecordViewHolder.ac8.setText(a8c);
+                            routineRecordViewHolder.bc8.setText(b8c);
+                            routineRecordViewHolder.cc8.setText(c8c);
+                            routineRecordViewHolder.dc8.setText(d8c);
+                            routineRecordViewHolder.ec8.setText(e8c);
+                            routineRecordViewHolder.fc8.setText(f8c);
+
+                            routineRecordViewHolder.at8.setText(a8t+"  ("+a8r+")");
+                            routineRecordViewHolder.bt8.setText(b8t+"  ("+b8r+")");
+                            routineRecordViewHolder.ct8.setText(c8t+"  ("+c8r+")");
+                            routineRecordViewHolder.dt8.setText(d8t+"  ("+d8r+")");
+                            routineRecordViewHolder.et8.setText(e8t+"  ("+e8r+")");
+                            routineRecordViewHolder.ft8.setText(f8t+"  ("+f8r+")");
+
                             //----------- FOR 9TH SEMESTER-----------/
 
                             String a9c = Objects.requireNonNull(snapshot.child("A9C").getValue()).toString();
@@ -380,6 +407,20 @@ public class ShowRoutine {
                             String d9r = Objects.requireNonNull(snapshot.child("D9R").getValue()).toString();
                             String e9r = Objects.requireNonNull(snapshot.child("E9R").getValue()).toString();
                             String f9r = Objects.requireNonNull(snapshot.child("F9R").getValue()).toString();
+
+                            routineRecordViewHolder.ac9.setText(a9c);
+                            routineRecordViewHolder.bc9.setText(b9c);
+                            routineRecordViewHolder.cc9.setText(c9c);
+                            routineRecordViewHolder.dc9.setText(d9c);
+                            routineRecordViewHolder.ec9.setText(e9c);
+                            routineRecordViewHolder.fc9.setText(f9c);
+
+                            routineRecordViewHolder.at9.setText(a9t+"  ("+a9r+")");
+                            routineRecordViewHolder.bt9.setText(b9t+"  ("+b9r+")");
+                            routineRecordViewHolder.ct9.setText(c9t+"  ("+c9r+")");
+                            routineRecordViewHolder.dt9.setText(d9t+"  ("+d9r+")");
+                            routineRecordViewHolder.et9.setText(e9t+"  ("+e9r+")");
+                            routineRecordViewHolder.ft9.setText(f9t+"  ("+f9r+")");
 
 
                             //----------- FOR 10TH SEMESTER-----------/
@@ -405,6 +446,20 @@ public class ShowRoutine {
                             String e10r = Objects.requireNonNull(snapshot.child("E10R").getValue()).toString();
                             String f10r = Objects.requireNonNull(snapshot.child("F10R").getValue()).toString();
 
+                            routineRecordViewHolder.ac10.setText(a10c);
+                            routineRecordViewHolder.bc10.setText(b10c);
+                            routineRecordViewHolder.cc10.setText(c10c);
+                            routineRecordViewHolder.dc10.setText(d10c);
+                            routineRecordViewHolder.ec10.setText(e10c);
+                            routineRecordViewHolder.fc10.setText(f10c);
+
+                            routineRecordViewHolder.at10.setText(a10t+"  ("+a10r+")");
+                            routineRecordViewHolder.bt10.setText(b10t+"  ("+b10r+")");
+                            routineRecordViewHolder.ct10.setText(c10t+"  ("+c10r+")");
+                            routineRecordViewHolder.dt10.setText(d10t+"  ("+d10r+")");
+                            routineRecordViewHolder.et10.setText(e10t+"  ("+e10r+")");
+                            routineRecordViewHolder.ft10.setText(f10t+"  ("+f10r+")");
+
 
                             //----------- FOR 11TH SEMESTER-----------/
 
@@ -429,6 +484,20 @@ public class ShowRoutine {
                             String e11r = Objects.requireNonNull(snapshot.child("E11R").getValue()).toString();
                             String f11r = Objects.requireNonNull(snapshot.child("F11R").getValue()).toString();
 
+                            routineRecordViewHolder.ac11.setText(a11c);
+                            routineRecordViewHolder.bc11.setText(b11c);
+                            routineRecordViewHolder.cc11.setText(c11c);
+                            routineRecordViewHolder.dc11.setText(d11c);
+                            routineRecordViewHolder.ec11.setText(e11c);
+                            routineRecordViewHolder.fc11.setText(f11c);
+
+                            routineRecordViewHolder.at11.setText(a11t+"  ("+a11r+")");
+                            routineRecordViewHolder.bt11.setText(b11t+"  ("+b11r+")");
+                            routineRecordViewHolder.ct11.setText(c11t+"  ("+c11r+")");
+                            routineRecordViewHolder.dt11.setText(d11t+"  ("+d11r+")");
+                            routineRecordViewHolder.et11.setText(e11t+"  ("+e11r+")");
+                            routineRecordViewHolder.ft11.setText(f11t+"  ("+f11r+")");
+
 
                             //----------- FOR 12TH SEMESTER-----------/
 
@@ -452,6 +521,21 @@ public class ShowRoutine {
                             String d12r = Objects.requireNonNull(snapshot.child("D12R").getValue()).toString();
                             String e12r = Objects.requireNonNull(snapshot.child("E12R").getValue()).toString();
                             String f12r = Objects.requireNonNull(snapshot.child("F12R").getValue()).toString();
+
+
+                            routineRecordViewHolder.ac12.setText(a12c);
+                            routineRecordViewHolder.bc12.setText(b12c);
+                            routineRecordViewHolder.cc12.setText(c12c);
+                            routineRecordViewHolder.dc12.setText(d12c);
+                            routineRecordViewHolder.ec12.setText(e12c);
+                            routineRecordViewHolder.fc12.setText(f12c);
+
+                            routineRecordViewHolder.at12.setText(a12t+"  ("+a12r+")");
+                            routineRecordViewHolder.bt12.setText(b12t+"  ("+b12r+")");
+                            routineRecordViewHolder.ct12.setText(c12t+"  ("+c12r+")");
+                            routineRecordViewHolder.dt12.setText(d12t+"  ("+d12r+")");
+                            routineRecordViewHolder.et12.setText(e12t+"  ("+e12r+")");
+                            routineRecordViewHolder.ft12.setText(f12t+"  ("+f12r+")");
 
 
 
