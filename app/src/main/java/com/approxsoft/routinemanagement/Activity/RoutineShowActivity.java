@@ -28,7 +28,7 @@ public class RoutineShowActivity extends AppCompatActivity {
         timeE = findViewById(R.id.e_time);
         timeF = findViewById(R.id.f_time);
 
-        routineView = findViewById(R.id.routine_view);
+        routineView = findViewById(R.id.recycle_routine_view);
         routineView.setHasFixedSize(true);
         LinearLayoutManager routine = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false);
         routine.setReverseLayout(true);

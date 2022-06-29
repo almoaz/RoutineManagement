@@ -22,7 +22,7 @@ public class CreateRoutine {
         HashMap<String, Object> map = new HashMap<>();
         //----------for 1st semester -----------//
         map.put("count",count);
-        map.put("routineFor",sat);
+        map.put("dayName",sat);
         map.put("A1C",a1C.getSelectedItem().toString());
         map.put("B1C",b1C.getSelectedItem().toString());
         map.put("C1C",c1C.getSelectedItem().toString());
