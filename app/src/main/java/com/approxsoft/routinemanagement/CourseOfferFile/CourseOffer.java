@@ -77,6 +77,8 @@ public class CourseOffer {
             @Override
             public void onClick(View view) {
 
+
+
                 clickBtn = "yes";
 
                 courserReference.child("Department Of CSE And CSIT").child("Semester Course Offer").child(selectCourserOfferSemester.getSelectedItem().toString()).addListenerForSingleValueEvent(new ValueEventListener() {
