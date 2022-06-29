@@ -24,65 +24,67 @@ import java.util.Objects;
 public class ShowRoutine {
     static DatabaseReference routineReference = FirebaseDatabase.getInstance().getReference();
 
-    public static void showRoutine(TextView timeA, TextView timeB, TextView timeC, TextView timeD, TextView timeE, TextView timeF, RecyclerView routineView){
+    public static void showRoutine(RecyclerView routineView,TextView timeA, TextView timeB, TextView timeC, TextView timeD, TextView timeE, TextView timeF){
 
-        DisplayAllRoutineRecords("", routineView,timeA,timeB,timeC,timeD,timeE,timeF);
+        routineReference.child("Department Of CSE And CSIT").child("Routine").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot)
+            {
+                if (snapshot.hasChild("Time"))
+                {
+                    String t1 = Objects.requireNonNull(snapshot.child("Time").child("aTime").getValue()).toString();
+                    String t2 = Objects.requireNonNull(snapshot.child("Time").child("bTime").getValue()).toString();
+                    String t3 = Objects.requireNonNull(snapshot.child("Time").child("cTime").getValue()).toString();
+                    String t4 = Objects.requireNonNull(snapshot.child("Time").child("dTime").getValue()).toString();
+                    String t5 = Objects.requireNonNull(snapshot.child("Time").child("eTime").getValue()).toString();
+                    String t6 = Objects.requireNonNull(snapshot.child("Time").child("fTime").getValue()).toString();
+
+
+                    timeA.setText(t1);
+                    timeB.setText(t2);
+                    timeC.setText(t3);
+                    timeD.setText(t4);
+                    timeE.setText(t5);
+                    timeF.setText(t6);
+
+
+
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+        DisplayAllRoutineRecords(routineView);
+
+
     }
 
 
-    private static void DisplayAllRoutineRecords(String s, RecyclerView routineView, TextView timeA, TextView timeB, TextView timeC, TextView timeD, TextView timeE, TextView timeF) {
+    private static void DisplayAllRoutineRecords(RecyclerView routineView) {
 
         Query query = routineReference.child("Department Of CSE And CSIT").child("Routine").orderByChild("count")
-                .startAt(s).endAt(s + "\uf8ff");// haven't implemented a proper list sort yet.
+                .startAt("").endAt("" + "\uf8ff");// haven't implemented a proper list sort yet.
 
         FirebaseRecyclerOptions<RoutineData> options = new FirebaseRecyclerOptions.Builder<RoutineData>().setQuery(query, RoutineData.class).build();
 
-        FirebaseRecyclerAdapter adapter = new FirebaseRecyclerAdapter<RoutineData, RoutineRecordViewHolder>(options) {
+        FirebaseRecyclerAdapter<RoutineData, RoutineRecordViewHolder> adapter = new FirebaseRecyclerAdapter<RoutineData, RoutineRecordViewHolder>(options) {
             @Override
             protected void onBindViewHolder(@NonNull final RoutineRecordViewHolder routineRecordViewHolder, final int position, @NonNull final RoutineData routineData) {
 
                 String usersIDs = getRef(position).getKey();
 
-                routineReference.child("Department Of CSE And CSIT").child("Routine").addValueEventListener(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot snapshot)
-                    {
-                        if (snapshot.hasChild("Time"))
-                        {
-                            String t1 = Objects.requireNonNull(snapshot.child("Time").child("aTime").getValue()).toString();
-                            String t2 = Objects.requireNonNull(snapshot.child("Time").child("bTime").getValue()).toString();
-                            String t3 = Objects.requireNonNull(snapshot.child("Time").child("cTime").getValue()).toString();
-                            String t4 = Objects.requireNonNull(snapshot.child("Time").child("dTime").getValue()).toString();
-                            String t5 = Objects.requireNonNull(snapshot.child("Time").child("eTime").getValue()).toString();
-                            String t6 = Objects.requireNonNull(snapshot.child("Time").child("fTime").getValue()).toString();
 
-
-                            timeA.setText(t1);
-                            timeB.setText(t2);
-                            timeC.setText(t3);
-                            timeD.setText(t4);
-                            timeE.setText(t5);
-                            timeF.setText(t6);
-
-
-
-                        }
-                    }
-
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError error) {
-
-                    }
-                });
-
+                assert usersIDs != null;
                 routineReference.child("Department Of CSE And CSIT").child("Routine").child(usersIDs).addValueEventListener(new ValueEventListener() {
                     @SuppressLint("SetTextI18n")
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot)
                     {
                         if (snapshot.exists()) {
-
-                            String routine = snapshot.child("routineFor").getValue().toString();
 
                             //----------- FOR 1ST SEMESTER-----------/
 
@@ -555,6 +557,7 @@ public class ShowRoutine {
 
             }
 
+            @NonNull
             public RoutineRecordViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
                 View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.routine_item, parent ,false);
                 return new RoutineRecordViewHolder(view);

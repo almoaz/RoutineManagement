@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.approxsoft.routinemanagement.R;
 import com.approxsoft.routinemanagement.RoutineFile.ShowRoutine;
@@ -34,7 +35,9 @@ public class RoutineShowActivity extends AppCompatActivity {
         routine.setStackFromEnd(true);
         routineView.setLayoutManager(routine);
 
-        ShowRoutine.showRoutine(timeA, timeB, timeC, timeD, timeE, timeF,routineView);
+        ShowRoutine.showRoutine(routineView,timeA, timeB, timeC, timeD, timeE, timeF);
+
+        Toast.makeText(RoutineShowActivity.this,"Routine Open Successfully!",Toast.LENGTH_SHORT).show();
 
 
     }
