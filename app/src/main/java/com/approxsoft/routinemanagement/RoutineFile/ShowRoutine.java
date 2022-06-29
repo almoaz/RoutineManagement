@@ -442,12 +442,12 @@ public class ShowRoutine {
                             routineRecordViewHolder.ec3.setText(e3c);
                             routineRecordViewHolder.fc3.setText(f3c);
 
-                            routineRecordViewHolder.at3.setText(a3t+"  ("+a3r+")");
-                            routineRecordViewHolder.bt3.setText(b3t+"  ("+b3r+")");
-                            routineRecordViewHolder.ct3.setText(c3t+"  ("+c3r+")");
-                            routineRecordViewHolder.dt3.setText(d3t+"  ("+d3r+")");
-                            routineRecordViewHolder.et3.setText(e3t+"  ("+e3r+")");
-                            routineRecordViewHolder.ft3.setText(f3t+"  ("+f3r+")");
+                            AddClassRoom(routineRecordViewHolder.at3,a3t,a3r);
+                            AddClassRoom(routineRecordViewHolder.bt3,b3t,b3r);
+                            AddClassRoom(routineRecordViewHolder.ct3,c3t,c3r);
+                            AddClassRoom(routineRecordViewHolder.dt3,d3t,d3r);
+                            AddClassRoom(routineRecordViewHolder.et3,e3t,e3r);
+                            AddClassRoom(routineRecordViewHolder.ft3,f3t,f3r);
 
 
 
@@ -459,12 +459,12 @@ public class ShowRoutine {
                             routineRecordViewHolder.ec4.setText(e4c);
                             routineRecordViewHolder.fc4.setText(f4c);
 
-                            routineRecordViewHolder.at4.setText(a4t+"  ("+a4r+")");
-                            routineRecordViewHolder.bt4.setText(b4t+"  ("+b4r+")");
-                            routineRecordViewHolder.ct4.setText(c4t+"  ("+c4r+")");
-                            routineRecordViewHolder.dt4.setText(d4t+"  ("+d4r+")");
-                            routineRecordViewHolder.et4.setText(e4t+"  ("+e4r+")");
-                            routineRecordViewHolder.ft4.setText(f4t+"  ("+f4r+")");
+                            AddClassRoom(routineRecordViewHolder.at4,a4t,a4r);
+                            AddClassRoom(routineRecordViewHolder.bt4,b4t,b4r);
+                            AddClassRoom(routineRecordViewHolder.ct4,c4t,c4r);
+                            AddClassRoom(routineRecordViewHolder.dt4,d4t,d4r);
+                            AddClassRoom(routineRecordViewHolder.et4,e4t,e4r);
+                            AddClassRoom(routineRecordViewHolder.ft4,f4t,f4r);
 
 
 
@@ -477,12 +477,12 @@ public class ShowRoutine {
                             routineRecordViewHolder.ec5.setText(e5c);
                             routineRecordViewHolder.fc5.setText(f5c);
 
-                            routineRecordViewHolder.at5.setText(a5t+"  ("+a5r+")");
-                            routineRecordViewHolder.bt5.setText(b5t+"  ("+b5r+")");
-                            routineRecordViewHolder.ct5.setText(c5t+"  ("+c5r+")");
-                            routineRecordViewHolder.dt5.setText(d5t+"  ("+d5r+")");
-                            routineRecordViewHolder.et5.setText(e5t+"  ("+e5r+")");
-                            routineRecordViewHolder.ft5.setText(f5t+"  ("+f5r+")");
+                            AddClassRoom(routineRecordViewHolder.at5,a5t,a5r);
+                            AddClassRoom(routineRecordViewHolder.bt5,b5t,b5r);
+                            AddClassRoom(routineRecordViewHolder.ct5,c5t,c5r);
+                            AddClassRoom(routineRecordViewHolder.dt5,d5t,d5r);
+                            AddClassRoom(routineRecordViewHolder.et5,e5t,e5r);
+                            AddClassRoom(routineRecordViewHolder.ft5,f5t,f5r);
 
 
 
@@ -494,12 +494,12 @@ public class ShowRoutine {
                             routineRecordViewHolder.ec6.setText(e6c);
                             routineRecordViewHolder.fc6.setText(f6c);
 
-                            routineRecordViewHolder.at6.setText(a6t+"  ("+a6r+")");
-                            routineRecordViewHolder.bt6.setText(b6t+"  ("+b6r+")");
-                            routineRecordViewHolder.ct6.setText(c6t+"  ("+c6r+")");
-                            routineRecordViewHolder.dt6.setText(d6t+"  ("+d6r+")");
-                            routineRecordViewHolder.et6.setText(e6t+"  ("+e6r+")");
-                            routineRecordViewHolder.ft6.setText(f6t+"  ("+f6r+")");
+                            AddClassRoom(routineRecordViewHolder.at6,a6t,a6r);
+                            AddClassRoom(routineRecordViewHolder.bt6,b6t,b6r);
+                            AddClassRoom(routineRecordViewHolder.ct6,c6t,c6r);
+                            AddClassRoom(routineRecordViewHolder.dt6,d6t,d6r);
+                            AddClassRoom(routineRecordViewHolder.et6,e6t,e6r);
+                            AddClassRoom(routineRecordViewHolder.ft6,f6t,f6r);
 
 
                             routineRecordViewHolder.ac7.setText(a7c);
@@ -509,12 +509,12 @@ public class ShowRoutine {
                             routineRecordViewHolder.ec7.setText(e7c);
                             routineRecordViewHolder.fc7.setText(f7c);
 
-                            routineRecordViewHolder.at7.setText(a7t+"  ("+a7r+")");
-                            routineRecordViewHolder.bt7.setText(b7t+"  ("+b7r+")");
-                            routineRecordViewHolder.ct7.setText(c7t+"  ("+c7r+")");
-                            routineRecordViewHolder.dt7.setText(d7t+"  ("+d7r+")");
-                            routineRecordViewHolder.et7.setText(e7t+"  ("+e7r+")");
-                            routineRecordViewHolder.ft7.setText(f7t+"  ("+f7r+")");
+                            AddClassRoom(routineRecordViewHolder.at7,a7t,a7r);
+                            AddClassRoom(routineRecordViewHolder.bt7,b7t,b7r);
+                            AddClassRoom(routineRecordViewHolder.ct7,c7t,c7r);
+                            AddClassRoom(routineRecordViewHolder.dt7,d7t,d7r);
+                            AddClassRoom(routineRecordViewHolder.et7,e7t,e7r);
+                            AddClassRoom(routineRecordViewHolder.ft7,f7t,f7r);
 
 
                             routineRecordViewHolder.ac8.setText(a8c);
@@ -524,12 +524,12 @@ public class ShowRoutine {
                             routineRecordViewHolder.ec8.setText(e8c);
                             routineRecordViewHolder.fc8.setText(f8c);
 
-                            routineRecordViewHolder.at8.setText(a8t+"  ("+a8r+")");
-                            routineRecordViewHolder.bt8.setText(b8t+"  ("+b8r+")");
-                            routineRecordViewHolder.ct8.setText(c8t+"  ("+c8r+")");
-                            routineRecordViewHolder.dt8.setText(d8t+"  ("+d8r+")");
-                            routineRecordViewHolder.et8.setText(e8t+"  ("+e8r+")");
-                            routineRecordViewHolder.ft8.setText(f8t+"  ("+f8r+")");
+                            AddClassRoom(routineRecordViewHolder.at8,a8t,a8r);
+                            AddClassRoom(routineRecordViewHolder.bt8,b8t,b8r);
+                            AddClassRoom(routineRecordViewHolder.ct8,c8t,c8r);
+                            AddClassRoom(routineRecordViewHolder.dt8,d8t,d8r);
+                            AddClassRoom(routineRecordViewHolder.et8,e8t,e8r);
+                            AddClassRoom(routineRecordViewHolder.ft8,f8t,f8r);
 
 
 
@@ -540,12 +540,12 @@ public class ShowRoutine {
                             routineRecordViewHolder.ec9.setText(e9c);
                             routineRecordViewHolder.fc9.setText(f9c);
 
-                            routineRecordViewHolder.at9.setText(a9t+"  ("+a9r+")");
-                            routineRecordViewHolder.bt9.setText(b9t+"  ("+b9r+")");
-                            routineRecordViewHolder.ct9.setText(c9t+"  ("+c9r+")");
-                            routineRecordViewHolder.dt9.setText(d9t+"  ("+d9r+")");
-                            routineRecordViewHolder.et9.setText(e9t+"  ("+e9r+")");
-                            routineRecordViewHolder.ft9.setText(f9t+"  ("+f9r+")");
+                            AddClassRoom(routineRecordViewHolder.at9,a9t,a9r);
+                            AddClassRoom(routineRecordViewHolder.bt9,b9t,b9r);
+                            AddClassRoom(routineRecordViewHolder.ct9,c9t,c9r);
+                            AddClassRoom(routineRecordViewHolder.dt9,d9t,d9r);
+                            AddClassRoom(routineRecordViewHolder.et9,e9t,e9r);
+                            AddClassRoom(routineRecordViewHolder.ft9,f9t,f9r);
 
 
 
@@ -557,12 +557,12 @@ public class ShowRoutine {
                             routineRecordViewHolder.ec10.setText(e10c);
                             routineRecordViewHolder.fc10.setText(f10c);
 
-                            routineRecordViewHolder.at10.setText(a10t+"  ("+a10r+")");
-                            routineRecordViewHolder.bt10.setText(b10t+"  ("+b10r+")");
-                            routineRecordViewHolder.ct10.setText(c10t+"  ("+c10r+")");
-                            routineRecordViewHolder.dt10.setText(d10t+"  ("+d10r+")");
-                            routineRecordViewHolder.et10.setText(e10t+"  ("+e10r+")");
-                            routineRecordViewHolder.ft10.setText(f10t+"  ("+f10r+")");
+                            AddClassRoom(routineRecordViewHolder.at10,a10t,a10r);
+                            AddClassRoom(routineRecordViewHolder.bt10,b10t,b10r);
+                            AddClassRoom(routineRecordViewHolder.ct10,c10t,c10r);
+                            AddClassRoom(routineRecordViewHolder.dt10,d10t,d10r);
+                            AddClassRoom(routineRecordViewHolder.et10,e10t,e10r);
+                            AddClassRoom(routineRecordViewHolder.ft10,f10t,f10r);
 
 
 
@@ -574,12 +574,12 @@ public class ShowRoutine {
                             routineRecordViewHolder.ec11.setText(e11c);
                             routineRecordViewHolder.fc11.setText(f11c);
 
-                            routineRecordViewHolder.at11.setText(a11t+"  ("+a11r+")");
-                            routineRecordViewHolder.bt11.setText(b11t+"  ("+b11r+")");
-                            routineRecordViewHolder.ct11.setText(c11t+"  ("+c11r+")");
-                            routineRecordViewHolder.dt11.setText(d11t+"  ("+d11r+")");
-                            routineRecordViewHolder.et11.setText(e11t+"  ("+e11r+")");
-                            routineRecordViewHolder.ft11.setText(f11t+"  ("+f11r+")");
+                            AddClassRoom(routineRecordViewHolder.at11,a11t,a11r);
+                            AddClassRoom(routineRecordViewHolder.bt11,b11t,b11r);
+                            AddClassRoom(routineRecordViewHolder.ct11,c11t,c11r);
+                            AddClassRoom(routineRecordViewHolder.dt11,d11t,d11r);
+                            AddClassRoom(routineRecordViewHolder.et11,e11t,e11r);
+                            AddClassRoom(routineRecordViewHolder.ft11,f11t,f11r);
 
 
 
@@ -592,12 +592,12 @@ public class ShowRoutine {
                             routineRecordViewHolder.ec12.setText(e12c);
                             routineRecordViewHolder.fc12.setText(f12c);
 
-                            routineRecordViewHolder.at12.setText(a12t+"  ("+a12r+")");
-                            routineRecordViewHolder.bt12.setText(b12t+"  ("+b12r+")");
-                            routineRecordViewHolder.ct12.setText(c12t+"  ("+c12r+")");
-                            routineRecordViewHolder.dt12.setText(d12t+"  ("+d12r+")");
-                            routineRecordViewHolder.et12.setText(e12t+"  ("+e12r+")");
-                            routineRecordViewHolder.ft12.setText(f12t+"  ("+f12r+")");
+                            AddClassRoom(routineRecordViewHolder.at12,a12t,a12r);
+                            AddClassRoom(routineRecordViewHolder.bt12,b12t,b12r);
+                            AddClassRoom(routineRecordViewHolder.ct12,c12t,c12r);
+                            AddClassRoom(routineRecordViewHolder.dt12,d12t,d12r);
+                            AddClassRoom(routineRecordViewHolder.et12,e12t,e12r);
+                            AddClassRoom(routineRecordViewHolder.ft12,f12t,f12r);
 
 
 
