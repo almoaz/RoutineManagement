@@ -44,6 +44,9 @@ public class MainActivity extends AppCompatActivity {
 
     DatabaseReference reference;
 
+    ///---------- for routine ----------///
+    TextView routineOpenBtn;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,6 +69,8 @@ public class MainActivity extends AppCompatActivity {
         teacherName = findViewById(R.id.home_teacher_name_text);
         teacherNameSubmitBtn = findViewById(R.id.teacher_name_submit_btn);
 
+        routineOpenBtn = findViewById(R.id.home_routine_open_btn);
+
 
         courseOffer.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,6 +84,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, RoutineActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        routineOpenBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, RoutineShowActivity.class);
                 startActivity(intent);
             }
         });

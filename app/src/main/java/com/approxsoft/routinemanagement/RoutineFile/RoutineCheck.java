@@ -390,11 +390,20 @@ public class RoutineCheck {
                 String s1 = c.getSelectedItem().toString();
                 if (snapshot.hasChild(s1))
                 {
-                    String t2 = Objects.requireNonNull(snapshot.child(s1).child("teacherName").getValue()).toString().trim();
+                    if (snapshot.child(s1).hasChild("teacherName"))
+                    {
+                        String t2 = Objects.requireNonNull(snapshot.child(s1).child("teacherName").getValue()).toString().trim();
 
-                    int z = Integer.parseInt(t2);
+                        int z = Integer.parseInt(t2);
 
-                    t.setSelection(z);
+                        t.setSelection(z);
+                    }
+                    else
+                    {
+                        t.setSelection(0);
+                    }
+
+
 
                 }
                 else

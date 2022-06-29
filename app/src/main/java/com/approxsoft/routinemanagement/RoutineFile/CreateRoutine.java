@@ -3,14 +3,25 @@ package com.approxsoft.routinemanagement.RoutineFile;
 import android.widget.EditText;
 import android.widget.Spinner;
 
+import androidx.annotation.NonNull;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.util.HashMap;
+import java.util.Objects;
 
 public class CreateRoutine {
 
-    public static void createRoutine(String sat, Spinner a1C, Spinner b1C, Spinner c1C, Spinner d1C, Spinner e1C, Spinner f1C, Spinner a1T, Spinner b1T, Spinner c1T, Spinner d1T, Spinner e1T, Spinner f1T, Spinner a1R, Spinner b1R, Spinner c1R, Spinner d1R, Spinner e1R, Spinner f1R, Spinner a2C, Spinner b2C, Spinner c2C, Spinner d2C, Spinner e2C, Spinner f2C, Spinner a2T, Spinner b2T, Spinner c2T, Spinner d2T, Spinner e2T, Spinner f2T, Spinner a2R, Spinner b2R, Spinner c2R, Spinner d2R, Spinner e2R, Spinner f2R, Spinner a3C, Spinner b3C, Spinner c3C, Spinner d3C, Spinner e3C, Spinner f3C, Spinner a3T, Spinner b3T, Spinner c3T, Spinner d3T, Spinner e3T, Spinner f3T, Spinner a3R, Spinner b3R, Spinner c3R, Spinner d3R, Spinner e3R, Spinner f3R, Spinner a4C, Spinner b4C, Spinner c4C, Spinner d4C, Spinner e4C, Spinner f4C, Spinner a4T, Spinner b4T, Spinner c4T, Spinner d4T, Spinner e4T, Spinner f4T, Spinner a4R, Spinner b4R, Spinner c4R, Spinner d4R, Spinner e4R, Spinner f4R, Spinner a5C, Spinner b5C, Spinner c5C, Spinner d5C, Spinner e5C, Spinner f5C, Spinner a5T, Spinner b5T, Spinner c5T, Spinner d5T, Spinner e5T, Spinner f5T, Spinner a5R, Spinner b5R, Spinner c5R, Spinner d5R, Spinner e5R, Spinner f5R, Spinner a6C, Spinner b6C, Spinner c6C, Spinner d6C, Spinner e6C, Spinner f6C, Spinner a6T, Spinner b6T, Spinner c6T, Spinner d6T, Spinner e6T, Spinner f6T, Spinner a6R, Spinner b6R, Spinner c6R, Spinner d6R, Spinner e6R, Spinner f6R, Spinner a7C, Spinner b7C, Spinner c7C, Spinner d7C, Spinner e7C, Spinner f7C, Spinner a7T, Spinner b7T, Spinner c7T, Spinner d7T, Spinner e7T, Spinner f7T, Spinner a7R, Spinner b7R, Spinner c7R, Spinner d7R, Spinner e7R, Spinner f7R, Spinner a8C, Spinner b8C, Spinner c8C, Spinner d8C, Spinner e8C, Spinner f8C, Spinner a8T, Spinner b8T, Spinner c8T, Spinner d8T, Spinner e8T, Spinner f8T, Spinner a8R, Spinner b8R, Spinner c8R, Spinner d8R, Spinner e8R, Spinner f8R, Spinner a9C, Spinner b9C, Spinner c9C, Spinner d9C, Spinner e9C, Spinner f9C, Spinner a9T, Spinner b9T, Spinner c9T, Spinner d9T, Spinner e9T, Spinner f9T, Spinner a9R, Spinner b9R, Spinner c9R, Spinner d9R, Spinner e9R, Spinner f9R, Spinner a10C, Spinner b10C, Spinner c10C, Spinner d10C, Spinner e10C, Spinner f10C, Spinner a10T, Spinner b10T, Spinner c10T, Spinner d10T, Spinner e10T, Spinner f10T, Spinner a10R, Spinner b10R, Spinner c10R, Spinner d10R, Spinner e10R, Spinner f10R, Spinner a11C, Spinner b11C, Spinner c11C, Spinner d11C, Spinner e11C, Spinner f11C, Spinner a11T, Spinner b11T, Spinner c11T, Spinner d11T, Spinner e11T, Spinner f11T, Spinner a11R, Spinner b11R, Spinner c11R, Spinner d11R, Spinner e11R, Spinner f11R, Spinner a12C, Spinner b12C, Spinner c12C, Spinner d12C, Spinner e12C, Spinner f12C, Spinner a12T, Spinner b12T, Spinner c12T, Spinner d12T, Spinner e12T, Spinner f12T, Spinner a12R, Spinner b12R, Spinner c12R, Spinner d12R, Spinner e12R, Spinner f12R)
+    static DatabaseReference routineReference = FirebaseDatabase.getInstance().getReference();
+
+    public static void createRoutine(String count,String sat, Spinner a1C, Spinner b1C, Spinner c1C, Spinner d1C, Spinner e1C, Spinner f1C, Spinner a1T, Spinner b1T, Spinner c1T, Spinner d1T, Spinner e1T, Spinner f1T, Spinner a1R, Spinner b1R, Spinner c1R, Spinner d1R, Spinner e1R, Spinner f1R, Spinner a2C, Spinner b2C, Spinner c2C, Spinner d2C, Spinner e2C, Spinner f2C, Spinner a2T, Spinner b2T, Spinner c2T, Spinner d2T, Spinner e2T, Spinner f2T, Spinner a2R, Spinner b2R, Spinner c2R, Spinner d2R, Spinner e2R, Spinner f2R, Spinner a3C, Spinner b3C, Spinner c3C, Spinner d3C, Spinner e3C, Spinner f3C, Spinner a3T, Spinner b3T, Spinner c3T, Spinner d3T, Spinner e3T, Spinner f3T, Spinner a3R, Spinner b3R, Spinner c3R, Spinner d3R, Spinner e3R, Spinner f3R, Spinner a4C, Spinner b4C, Spinner c4C, Spinner d4C, Spinner e4C, Spinner f4C, Spinner a4T, Spinner b4T, Spinner c4T, Spinner d4T, Spinner e4T, Spinner f4T, Spinner a4R, Spinner b4R, Spinner c4R, Spinner d4R, Spinner e4R, Spinner f4R, Spinner a5C, Spinner b5C, Spinner c5C, Spinner d5C, Spinner e5C, Spinner f5C, Spinner a5T, Spinner b5T, Spinner c5T, Spinner d5T, Spinner e5T, Spinner f5T, Spinner a5R, Spinner b5R, Spinner c5R, Spinner d5R, Spinner e5R, Spinner f5R, Spinner a6C, Spinner b6C, Spinner c6C, Spinner d6C, Spinner e6C, Spinner f6C, Spinner a6T, Spinner b6T, Spinner c6T, Spinner d6T, Spinner e6T, Spinner f6T, Spinner a6R, Spinner b6R, Spinner c6R, Spinner d6R, Spinner e6R, Spinner f6R, Spinner a7C, Spinner b7C, Spinner c7C, Spinner d7C, Spinner e7C, Spinner f7C, Spinner a7T, Spinner b7T, Spinner c7T, Spinner d7T, Spinner e7T, Spinner f7T, Spinner a7R, Spinner b7R, Spinner c7R, Spinner d7R, Spinner e7R, Spinner f7R, Spinner a8C, Spinner b8C, Spinner c8C, Spinner d8C, Spinner e8C, Spinner f8C, Spinner a8T, Spinner b8T, Spinner c8T, Spinner d8T, Spinner e8T, Spinner f8T, Spinner a8R, Spinner b8R, Spinner c8R, Spinner d8R, Spinner e8R, Spinner f8R, Spinner a9C, Spinner b9C, Spinner c9C, Spinner d9C, Spinner e9C, Spinner f9C, Spinner a9T, Spinner b9T, Spinner c9T, Spinner d9T, Spinner e9T, Spinner f9T, Spinner a9R, Spinner b9R, Spinner c9R, Spinner d9R, Spinner e9R, Spinner f9R, Spinner a10C, Spinner b10C, Spinner c10C, Spinner d10C, Spinner e10C, Spinner f10C, Spinner a10T, Spinner b10T, Spinner c10T, Spinner d10T, Spinner e10T, Spinner f10T, Spinner a10R, Spinner b10R, Spinner c10R, Spinner d10R, Spinner e10R, Spinner f10R, Spinner a11C, Spinner b11C, Spinner c11C, Spinner d11C, Spinner e11C, Spinner f11C, Spinner a11T, Spinner b11T, Spinner c11T, Spinner d11T, Spinner e11T, Spinner f11T, Spinner a11R, Spinner b11R, Spinner c11R, Spinner d11R, Spinner e11R, Spinner f11R, Spinner a12C, Spinner b12C, Spinner c12C, Spinner d12C, Spinner e12C, Spinner f12C, Spinner a12T, Spinner b12T, Spinner c12T, Spinner d12T, Spinner e12T, Spinner f12T, Spinner a12R, Spinner b12R, Spinner c12R, Spinner d12R, Spinner e12R, Spinner f12R)
     {
-        HashMap<String, String> map = new HashMap<>();
+        HashMap<String, Object> map = new HashMap<>();
         //----------for 1st semester -----------//
+        map.put("count",count);
         map.put("A1C",a1C.getSelectedItem().toString());
         map.put("B1C",b1C.getSelectedItem().toString());
         map.put("C1C",c1C.getSelectedItem().toString());
@@ -282,17 +293,35 @@ public class CreateRoutine {
         map.put("E12R",e12R.getSelectedItem().toString());
         map.put("F12R",f12R.getSelectedItem().toString());
 
+        routineReference.child("Department Of CSE And CSIT").child("Routine").child(sat).updateChildren(map).addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task) {
+
+            }
+        });
+
     }
 
     public static void routineTime(EditText aTime, EditText bTime, EditText cTime, EditText dTime, EditText eTime, EditText fTime)
     {
-        HashMap<String, String> map = new HashMap<>();
-        //----------for 1st semester -----------//
+        HashMap<String, Object> map = new HashMap<>();
+        //----------for Routine Time -----------//
         map.put("aTime",aTime.getText().toString());
         map.put("bTime",bTime.getText().toString());
         map.put("cTime",cTime.getText().toString());
         map.put("dTime",dTime.getText().toString());
         map.put("eTime",eTime.getText().toString());
         map.put("fTime",fTime.getText().toString());
+
+        routineReference.child("Department Of CSE And CSIT").child("Routine").child("Time").updateChildren(map).addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task)
+            {
+                if (task.isSuccessful())
+                {
+
+                }
+            }
+        });
     }
 }

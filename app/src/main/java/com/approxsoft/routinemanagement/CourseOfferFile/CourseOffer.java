@@ -274,7 +274,8 @@ public class CourseOffer {
 
                                         String cTName = snapshot.child(usersIDs).child("teacherName").getValue().toString();
 
-                                        courseViewHolder.courseTeacherName.setText(cTName);
+                                        teacherName(cTName,courseViewHolder.courseTeacherName);
+                                        //courseViewHolder.courseTeacherName.setText(cTName);
 
                                         courseViewHolder.cancelBtn.setOnClickListener(new View.OnClickListener() {
                                             @Override
@@ -289,6 +290,7 @@ public class CourseOffer {
                                                             courseViewHolder.cancelBtn.setVisibility(View.GONE);
                                                             courseViewHolder.addBtn.setVisibility(View.VISIBLE);
                                                             courseViewHolder.selectTeacherName.setVisibility(View.VISIBLE);
+                                                            courseViewHolder.selectTeacherName.setSelection(0);
                                                             courseViewHolder.courseTeacherName.setVisibility(View.GONE);
                                                         }
                                                     }
@@ -310,13 +312,15 @@ public class CourseOffer {
                                             @Override
                                             public void onClick(View view)
                                             {
-                                                courseOpen.child("12th Semester").child(usersIDs).child("teacherName").setValue(courseViewHolder.selectTeacherName.getSelectedItem().toString()).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                                String tName = String.valueOf(courseViewHolder.selectTeacherName.getSelectedItemPosition());
+                                                courseOpen.child("12th Semester").child(usersIDs).child("teacherName").setValue(tName).addOnCompleteListener(new OnCompleteListener<Void>() {
                                                     @Override
                                                     public void onComplete(@NonNull Task<Void> task) {
                                                         if (task.isSuccessful())
                                                         {
                                                             courseViewHolder.addBtn.setVisibility(View.GONE);
                                                             courseViewHolder.selectTeacherName.setVisibility(View.GONE);
+                                                            courseViewHolder.selectTeacherName.setSelection(0);
                                                             courseViewHolder.cancelBtn.setVisibility(View.VISIBLE);
                                                             courseViewHolder.courseTeacherName.setVisibility(View.VISIBLE);
 
@@ -445,8 +449,9 @@ public class CourseOffer {
                                         courseViewHolder.courseTeacherName.setVisibility(View.VISIBLE);
 
                                         String cTName = snapshot.child(usersIDs).child("teacherName").getValue().toString();
+                                        teacherName(cTName,courseViewHolder.courseTeacherName);
 
-                                        courseViewHolder.courseTeacherName.setText(cTName);
+                                        //courseViewHolder.courseTeacherName.setText(cTName);
 
                                         courseViewHolder.cancelBtn.setOnClickListener(new View.OnClickListener() {
                                             @Override
@@ -461,6 +466,7 @@ public class CourseOffer {
                                                             courseViewHolder.cancelBtn.setVisibility(View.GONE);
                                                             courseViewHolder.addBtn.setVisibility(View.VISIBLE);
                                                             courseViewHolder.selectTeacherName.setVisibility(View.VISIBLE);
+                                                            courseViewHolder.selectTeacherName.setSelection(0);
                                                             courseViewHolder.courseTeacherName.setVisibility(View.GONE);
                                                         }
                                                     }
@@ -482,13 +488,15 @@ public class CourseOffer {
                                             @Override
                                             public void onClick(View view)
                                             {
-                                                courseOpen.child("11th Semester").child(usersIDs).child("teacherName").setValue(courseViewHolder.selectTeacherName.getSelectedItem().toString()).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                                String tName = String.valueOf(courseViewHolder.selectTeacherName.getSelectedItemPosition());
+                                                courseOpen.child("11th Semester").child(usersIDs).child("teacherName").setValue(tName).addOnCompleteListener(new OnCompleteListener<Void>() {
                                                     @Override
                                                     public void onComplete(@NonNull Task<Void> task) {
                                                         if (task.isSuccessful())
                                                         {
                                                             courseViewHolder.addBtn.setVisibility(View.GONE);
                                                             courseViewHolder.selectTeacherName.setVisibility(View.GONE);
+                                                            courseViewHolder.selectTeacherName.setSelection(0);
                                                             courseViewHolder.cancelBtn.setVisibility(View.VISIBLE);
                                                             courseViewHolder.courseTeacherName.setVisibility(View.VISIBLE);
 
@@ -618,7 +626,8 @@ public class CourseOffer {
 
                                         String cTName = snapshot.child(usersIDs).child("teacherName").getValue().toString();
 
-                                        courseViewHolder.courseTeacherName.setText(cTName);
+                                        teacherName(cTName,courseViewHolder.courseTeacherName);
+                                       // courseViewHolder.courseTeacherName.setText(cTName);
 
                                         courseViewHolder.cancelBtn.setOnClickListener(new View.OnClickListener() {
                                             @Override
@@ -633,6 +642,7 @@ public class CourseOffer {
                                                             courseViewHolder.cancelBtn.setVisibility(View.GONE);
                                                             courseViewHolder.addBtn.setVisibility(View.VISIBLE);
                                                             courseViewHolder.selectTeacherName.setVisibility(View.VISIBLE);
+                                                            courseViewHolder.selectTeacherName.setSelection(0);
                                                             courseViewHolder.courseTeacherName.setVisibility(View.GONE);
                                                         }
                                                     }
@@ -654,13 +664,15 @@ public class CourseOffer {
                                             @Override
                                             public void onClick(View view)
                                             {
-                                                courseOpen.child("10th Semester").child(usersIDs).child("teacherName").setValue(courseViewHolder.selectTeacherName.getSelectedItem().toString()).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                                String tName = String.valueOf(courseViewHolder.selectTeacherName.getSelectedItemPosition());
+                                                courseOpen.child("10th Semester").child(usersIDs).child("teacherName").setValue(tName).addOnCompleteListener(new OnCompleteListener<Void>() {
                                                     @Override
                                                     public void onComplete(@NonNull Task<Void> task) {
                                                         if (task.isSuccessful())
                                                         {
                                                             courseViewHolder.addBtn.setVisibility(View.GONE);
                                                             courseViewHolder.selectTeacherName.setVisibility(View.GONE);
+                                                            courseViewHolder.selectTeacherName.setSelection(0);
                                                             courseViewHolder.cancelBtn.setVisibility(View.VISIBLE);
                                                             courseViewHolder.courseTeacherName.setVisibility(View.VISIBLE);
 
@@ -796,8 +808,9 @@ public class CourseOffer {
                                         courseViewHolder.courseTeacherName.setVisibility(View.VISIBLE);
 
                                         String cTName = snapshot.child(usersIDs).child("teacherName").getValue().toString();
+                                        teacherName(cTName,courseViewHolder.courseTeacherName);
 
-                                        courseViewHolder.courseTeacherName.setText(cTName);
+                                       // courseViewHolder.courseTeacherName.setText(cTName);
 
                                         courseViewHolder.cancelBtn.setOnClickListener(new View.OnClickListener() {
                                             @Override
@@ -812,6 +825,7 @@ public class CourseOffer {
                                                             courseViewHolder.cancelBtn.setVisibility(View.GONE);
                                                             courseViewHolder.addBtn.setVisibility(View.VISIBLE);
                                                             courseViewHolder.selectTeacherName.setVisibility(View.VISIBLE);
+                                                            courseViewHolder.selectTeacherName.setSelection(0);
                                                             courseViewHolder.courseTeacherName.setVisibility(View.GONE);
                                                         }
                                                     }
@@ -833,13 +847,15 @@ public class CourseOffer {
                                             @Override
                                             public void onClick(View view)
                                             {
-                                                courseOpen.child("9th Semester").child(usersIDs).child("teacherName").setValue(courseViewHolder.selectTeacherName.getSelectedItem().toString()).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                                String tName = String.valueOf(courseViewHolder.selectTeacherName.getSelectedItemPosition());
+                                                courseOpen.child("9th Semester").child(usersIDs).child("teacherName").setValue(tName).addOnCompleteListener(new OnCompleteListener<Void>() {
                                                     @Override
                                                     public void onComplete(@NonNull Task<Void> task) {
                                                         if (task.isSuccessful())
                                                         {
                                                             courseViewHolder.addBtn.setVisibility(View.GONE);
                                                             courseViewHolder.selectTeacherName.setVisibility(View.GONE);
+                                                            courseViewHolder.selectTeacherName.setSelection(0);
                                                             courseViewHolder.cancelBtn.setVisibility(View.VISIBLE);
                                                             courseViewHolder.courseTeacherName.setVisibility(View.VISIBLE);
 
@@ -974,8 +990,9 @@ public class CourseOffer {
                                         courseViewHolder.courseTeacherName.setVisibility(View.VISIBLE);
 
                                         String cTName = snapshot.child(usersIDs).child("teacherName").getValue().toString();
+                                        teacherName(cTName,courseViewHolder.courseTeacherName);
 
-                                        courseViewHolder.courseTeacherName.setText(cTName);
+                                       // courseViewHolder.courseTeacherName.setText(cTName);
 
                                         courseViewHolder.cancelBtn.setOnClickListener(new View.OnClickListener() {
                                             @Override
@@ -990,6 +1007,7 @@ public class CourseOffer {
                                                             courseViewHolder.cancelBtn.setVisibility(View.GONE);
                                                             courseViewHolder.addBtn.setVisibility(View.VISIBLE);
                                                             courseViewHolder.selectTeacherName.setVisibility(View.VISIBLE);
+                                                            courseViewHolder.selectTeacherName.setSelection(0);
                                                             courseViewHolder.courseTeacherName.setVisibility(View.GONE);
                                                         }
                                                     }
@@ -1011,13 +1029,15 @@ public class CourseOffer {
                                             @Override
                                             public void onClick(View view)
                                             {
-                                                courseOpen.child("8th Semester").child(usersIDs).child("teacherName").setValue(courseViewHolder.selectTeacherName.getSelectedItem().toString()).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                                String tName = String.valueOf(courseViewHolder.selectTeacherName.getSelectedItemPosition());
+                                                courseOpen.child("8th Semester").child(usersIDs).child("teacherName").setValue(tName).addOnCompleteListener(new OnCompleteListener<Void>() {
                                                     @Override
                                                     public void onComplete(@NonNull Task<Void> task) {
                                                         if (task.isSuccessful())
                                                         {
                                                             courseViewHolder.addBtn.setVisibility(View.GONE);
                                                             courseViewHolder.selectTeacherName.setVisibility(View.GONE);
+                                                            courseViewHolder.selectTeacherName.setSelection(0);
                                                             courseViewHolder.cancelBtn.setVisibility(View.VISIBLE);
                                                             courseViewHolder.courseTeacherName.setVisibility(View.VISIBLE);
 
@@ -1153,8 +1173,9 @@ public class CourseOffer {
                                         courseViewHolder.courseTeacherName.setVisibility(View.VISIBLE);
 
                                         String cTName = snapshot.child(usersIDs).child("teacherName").getValue().toString();
+                                        teacherName(cTName,courseViewHolder.courseTeacherName);
 
-                                        courseViewHolder.courseTeacherName.setText(cTName);
+                                        //courseViewHolder.courseTeacherName.setText(cTName);
 
                                         courseViewHolder.cancelBtn.setOnClickListener(new View.OnClickListener() {
                                             @Override
@@ -1169,6 +1190,7 @@ public class CourseOffer {
                                                             courseViewHolder.cancelBtn.setVisibility(View.GONE);
                                                             courseViewHolder.addBtn.setVisibility(View.VISIBLE);
                                                             courseViewHolder.selectTeacherName.setVisibility(View.VISIBLE);
+                                                            courseViewHolder.selectTeacherName.setSelection(0);
                                                             courseViewHolder.courseTeacherName.setVisibility(View.GONE);
                                                         }
                                                     }
@@ -1190,13 +1212,15 @@ public class CourseOffer {
                                             @Override
                                             public void onClick(View view)
                                             {
-                                                courseOpen.child("7th Semester").child(usersIDs).child("teacherName").setValue(courseViewHolder.selectTeacherName.getSelectedItem().toString()).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                                String tName = String.valueOf(courseViewHolder.selectTeacherName.getSelectedItemPosition());
+                                                courseOpen.child("7th Semester").child(usersIDs).child("teacherName").setValue(tName).addOnCompleteListener(new OnCompleteListener<Void>() {
                                                     @Override
                                                     public void onComplete(@NonNull Task<Void> task) {
                                                         if (task.isSuccessful())
                                                         {
                                                             courseViewHolder.addBtn.setVisibility(View.GONE);
                                                             courseViewHolder.selectTeacherName.setVisibility(View.GONE);
+                                                            courseViewHolder.selectTeacherName.setSelection(0);
                                                             courseViewHolder.cancelBtn.setVisibility(View.VISIBLE);
                                                             courseViewHolder.courseTeacherName.setVisibility(View.VISIBLE);
 
@@ -1331,8 +1355,9 @@ public class CourseOffer {
                                         courseViewHolder.courseTeacherName.setVisibility(View.VISIBLE);
 
                                         String cTName = snapshot.child(usersIDs).child("teacherName").getValue().toString();
+                                        teacherName(cTName,courseViewHolder.courseTeacherName);
 
-                                        courseViewHolder.courseTeacherName.setText(cTName);
+                                       // courseViewHolder.courseTeacherName.setText(cTName);
 
                                         courseViewHolder.cancelBtn.setOnClickListener(new View.OnClickListener() {
                                             @Override
@@ -1347,6 +1372,7 @@ public class CourseOffer {
                                                             courseViewHolder.cancelBtn.setVisibility(View.GONE);
                                                             courseViewHolder.addBtn.setVisibility(View.VISIBLE);
                                                             courseViewHolder.selectTeacherName.setVisibility(View.VISIBLE);
+                                                            courseViewHolder.selectTeacherName.setSelection(0);
                                                             courseViewHolder.courseTeacherName.setVisibility(View.GONE);
                                                         }
                                                     }
@@ -1368,13 +1394,15 @@ public class CourseOffer {
                                             @Override
                                             public void onClick(View view)
                                             {
-                                                courseOpen.child("6th Semester").child(usersIDs).child("teacherName").setValue(courseViewHolder.selectTeacherName.getSelectedItem().toString()).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                                String tName = String.valueOf(courseViewHolder.selectTeacherName.getSelectedItemPosition());
+                                                courseOpen.child("6th Semester").child(usersIDs).child("teacherName").setValue(tName).addOnCompleteListener(new OnCompleteListener<Void>() {
                                                     @Override
                                                     public void onComplete(@NonNull Task<Void> task) {
                                                         if (task.isSuccessful())
                                                         {
                                                             courseViewHolder.addBtn.setVisibility(View.GONE);
                                                             courseViewHolder.selectTeacherName.setVisibility(View.GONE);
+                                                            courseViewHolder.selectTeacherName.setSelection(0);
                                                             courseViewHolder.cancelBtn.setVisibility(View.VISIBLE);
                                                             courseViewHolder.courseTeacherName.setVisibility(View.VISIBLE);
 
@@ -1510,8 +1538,9 @@ public class CourseOffer {
                                         courseViewHolder.courseTeacherName.setVisibility(View.VISIBLE);
 
                                         String cTName = snapshot.child(usersIDs).child("teacherName").getValue().toString();
+                                        teacherName(cTName,courseViewHolder.courseTeacherName);
 
-                                        courseViewHolder.courseTeacherName.setText(cTName);
+                                        //courseViewHolder.courseTeacherName.setText(cTName);
 
                                         courseViewHolder.cancelBtn.setOnClickListener(new View.OnClickListener() {
                                             @Override
@@ -1526,6 +1555,7 @@ public class CourseOffer {
                                                             courseViewHolder.cancelBtn.setVisibility(View.GONE);
                                                             courseViewHolder.addBtn.setVisibility(View.VISIBLE);
                                                             courseViewHolder.selectTeacherName.setVisibility(View.VISIBLE);
+                                                            courseViewHolder.selectTeacherName.setSelection(0);
                                                             courseViewHolder.courseTeacherName.setVisibility(View.GONE);
                                                         }
                                                     }
@@ -1547,13 +1577,15 @@ public class CourseOffer {
                                             @Override
                                             public void onClick(View view)
                                             {
-                                                courseOpen.child("5th Semester").child(usersIDs).child("teacherName").setValue(courseViewHolder.selectTeacherName.getSelectedItem().toString()).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                                String tName = String.valueOf(courseViewHolder.selectTeacherName.getSelectedItemPosition());
+                                                courseOpen.child("5th Semester").child(usersIDs).child("teacherName").setValue(tName).addOnCompleteListener(new OnCompleteListener<Void>() {
                                                     @Override
                                                     public void onComplete(@NonNull Task<Void> task) {
                                                         if (task.isSuccessful())
                                                         {
                                                             courseViewHolder.addBtn.setVisibility(View.GONE);
                                                             courseViewHolder.selectTeacherName.setVisibility(View.GONE);
+                                                            courseViewHolder.selectTeacherName.setSelection(0);
                                                             courseViewHolder.cancelBtn.setVisibility(View.VISIBLE);
                                                             courseViewHolder.courseTeacherName.setVisibility(View.VISIBLE);
 
@@ -1689,8 +1721,9 @@ public class CourseOffer {
                                         courseViewHolder.courseTeacherName.setVisibility(View.VISIBLE);
 
                                         String cTName = snapshot.child(usersIDs).child("teacherName").getValue().toString();
+                                        teacherName(cTName,courseViewHolder.courseTeacherName);
 
-                                        courseViewHolder.courseTeacherName.setText(cTName);
+                                        //courseViewHolder.courseTeacherName.setText(cTName);
 
                                         courseViewHolder.cancelBtn.setOnClickListener(new View.OnClickListener() {
                                             @Override
@@ -1705,6 +1738,7 @@ public class CourseOffer {
                                                             courseViewHolder.cancelBtn.setVisibility(View.GONE);
                                                             courseViewHolder.addBtn.setVisibility(View.VISIBLE);
                                                             courseViewHolder.selectTeacherName.setVisibility(View.VISIBLE);
+                                                            courseViewHolder.selectTeacherName.setSelection(0);
                                                             courseViewHolder.courseTeacherName.setVisibility(View.GONE);
                                                         }
                                                     }
@@ -1726,13 +1760,15 @@ public class CourseOffer {
                                             @Override
                                             public void onClick(View view)
                                             {
-                                                courseOpen.child("4th Semester").child(usersIDs).child("teacherName").setValue(courseViewHolder.selectTeacherName.getSelectedItem().toString()).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                                String tName = String.valueOf(courseViewHolder.selectTeacherName.getSelectedItemPosition());
+                                                courseOpen.child("4th Semester").child(usersIDs).child("teacherName").setValue(tName).addOnCompleteListener(new OnCompleteListener<Void>() {
                                                     @Override
                                                     public void onComplete(@NonNull Task<Void> task) {
                                                         if (task.isSuccessful())
                                                         {
                                                             courseViewHolder.addBtn.setVisibility(View.GONE);
                                                             courseViewHolder.selectTeacherName.setVisibility(View.GONE);
+                                                            courseViewHolder.selectTeacherName.setSelection(0);
                                                             courseViewHolder.cancelBtn.setVisibility(View.VISIBLE);
                                                             courseViewHolder.courseTeacherName.setVisibility(View.VISIBLE);
 
@@ -1868,8 +1904,9 @@ public class CourseOffer {
                                         courseViewHolder.courseTeacherName.setVisibility(View.VISIBLE);
 
                                         String cTName = snapshot.child(usersIDs).child("teacherName").getValue().toString();
+                                        teacherName(cTName,courseViewHolder.courseTeacherName);
 
-                                        courseViewHolder.courseTeacherName.setText(cTName);
+                                       // courseViewHolder.courseTeacherName.setText(cTName);
 
                                         courseViewHolder.cancelBtn.setOnClickListener(new View.OnClickListener() {
                                             @Override
@@ -1884,6 +1921,7 @@ public class CourseOffer {
                                                             courseViewHolder.cancelBtn.setVisibility(View.GONE);
                                                             courseViewHolder.addBtn.setVisibility(View.VISIBLE);
                                                             courseViewHolder.selectTeacherName.setVisibility(View.VISIBLE);
+                                                            courseViewHolder.selectTeacherName.setSelection(0);
                                                             courseViewHolder.courseTeacherName.setVisibility(View.GONE);
                                                         }
                                                     }
@@ -1905,13 +1943,15 @@ public class CourseOffer {
                                             @Override
                                             public void onClick(View view)
                                             {
-                                                courseOpen.child("3rd Semester").child(usersIDs).child("teacherName").setValue(courseViewHolder.selectTeacherName.getSelectedItem().toString()).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                                String tName = String.valueOf(courseViewHolder.selectTeacherName.getSelectedItemPosition());
+                                                courseOpen.child("3rd Semester").child(usersIDs).child("teacherName").setValue(tName).addOnCompleteListener(new OnCompleteListener<Void>() {
                                                     @Override
                                                     public void onComplete(@NonNull Task<Void> task) {
                                                         if (task.isSuccessful())
                                                         {
                                                             courseViewHolder.addBtn.setVisibility(View.GONE);
                                                             courseViewHolder.selectTeacherName.setVisibility(View.GONE);
+                                                            courseViewHolder.selectTeacherName.setSelection(0);
                                                             courseViewHolder.cancelBtn.setVisibility(View.VISIBLE);
                                                             courseViewHolder.courseTeacherName.setVisibility(View.VISIBLE);
 
@@ -2047,8 +2087,9 @@ public class CourseOffer {
                                         courseViewHolder.courseTeacherName.setVisibility(View.VISIBLE);
 
                                         String cTName = snapshot.child(usersIDs).child("teacherName").getValue().toString();
+                                        teacherName(cTName,courseViewHolder.courseTeacherName);
 
-                                        courseViewHolder.courseTeacherName.setText(cTName);
+                                        //courseViewHolder.courseTeacherName.setText(cTName);
 
                                         courseViewHolder.cancelBtn.setOnClickListener(new View.OnClickListener() {
                                             @Override
@@ -2063,6 +2104,7 @@ public class CourseOffer {
                                                             courseViewHolder.cancelBtn.setVisibility(View.GONE);
                                                             courseViewHolder.addBtn.setVisibility(View.VISIBLE);
                                                             courseViewHolder.selectTeacherName.setVisibility(View.VISIBLE);
+                                                            courseViewHolder.selectTeacherName.setSelection(0);
                                                             courseViewHolder.courseTeacherName.setVisibility(View.GONE);
                                                         }
                                                     }
@@ -2070,6 +2112,7 @@ public class CourseOffer {
 
                                             }
                                         });
+
 
 
                                     }
@@ -2084,13 +2127,15 @@ public class CourseOffer {
                                             @Override
                                             public void onClick(View view)
                                             {
-                                                courseOpen.child("2nd Semester").child(usersIDs).child("teacherName").setValue(courseViewHolder.selectTeacherName.getSelectedItem().toString()).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                                String tName = String.valueOf(courseViewHolder.selectTeacherName.getSelectedItemPosition());
+                                                courseOpen.child("2nd Semester").child(usersIDs).child("teacherName").setValue(tName).addOnCompleteListener(new OnCompleteListener<Void>() {
                                                     @Override
                                                     public void onComplete(@NonNull Task<Void> task) {
                                                         if (task.isSuccessful())
                                                         {
                                                             courseViewHolder.addBtn.setVisibility(View.GONE);
                                                             courseViewHolder.selectTeacherName.setVisibility(View.GONE);
+                                                            courseViewHolder.selectTeacherName.setSelection(0);
                                                             courseViewHolder.cancelBtn.setVisibility(View.VISIBLE);
                                                             courseViewHolder.courseTeacherName.setVisibility(View.VISIBLE);
 
@@ -2243,6 +2288,7 @@ public class CourseOffer {
                                                             courseViewHolder.cancelBtn.setVisibility(View.GONE);
                                                             courseViewHolder.addBtn.setVisibility(View.VISIBLE);
                                                             courseViewHolder.selectTeacherName.setVisibility(View.VISIBLE);
+                                                            courseViewHolder.selectTeacherName.setSelection(0);
                                                             courseViewHolder.courseTeacherName.setVisibility(View.GONE);
                                                         }
                                                     }
@@ -2434,7 +2480,7 @@ public class CourseOffer {
         }
         if (cTName.equals("15"))
         {
-            courseTeacherName.setText("Abu Hasnath");
+            courseTeacherName.setText("Abul Hasnath");
         }
         if (cTName.equals("16"))
         {
@@ -2447,6 +2493,10 @@ public class CourseOffer {
         if (cTName.equals("18"))
         {
             courseTeacherName.setText("Mr.Siraj");
+        }
+        if (cTName.equals("19"))
+        {
+            courseTeacherName.setText("TBA");
         }
     }
 

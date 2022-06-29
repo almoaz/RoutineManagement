@@ -2,16 +2,13 @@ package com.approxsoft.routinemanagement.RoutineFile;
 
 public class RoutineData {
 
-    String count, dayName;
+    String count;
 
     public RoutineData() {
 
     }
 
-    public RoutineData(String count, String dayName) {
-        this.count = count;
-        this.dayName = dayName;
-    }
+
 
     public String getCount() {
         return count;
@@ -21,11 +18,4 @@ public class RoutineData {
         this.count = count;
     }
 
-    public String getDayName() {
-        return dayName;
-    }
-
-    public void setDayName(String dayName) {
-        this.dayName = dayName;
-    }
 }
