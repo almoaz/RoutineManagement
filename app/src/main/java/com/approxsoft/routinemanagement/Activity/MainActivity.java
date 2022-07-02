@@ -2,10 +2,14 @@ package com.approxsoft.routinemanagement.Activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
@@ -26,6 +30,15 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import org.apache.poi.hssf.usermodel.HSSFCell;
+import org.apache.poi.hssf.usermodel.HSSFRow;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.util.HashMap;
+
 public class MainActivity extends AppCompatActivity {
 
     ///--------- for log in ---------- ///
@@ -39,13 +52,16 @@ public class MainActivity extends AppCompatActivity {
     TextView courseOffer, createRoutine;
 
     ///--------- for teacher ---------///
-    EditText teacherName;
+    EditText teacherShortName, teacherFullName;
     Button teacherNameSubmitBtn;
 
     DatabaseReference reference;
 
     ///---------- for routine ----------///
     TextView routineOpenBtn;
+
+
+    private final File filePath = new File(Environment.getExternalStorageDirectory() + "/Demo.xls");
 
 
     @Override
@@ -57,6 +73,9 @@ public class MainActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
+        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                Manifest.permission.READ_EXTERNAL_STORAGE}, PackageManager.PERMISSION_GRANTED);
+
 
         loginBtn = findViewById(R.id.log_in);
         Password = findViewById(R.id.password);
@@ -66,7 +85,8 @@ public class MainActivity extends AppCompatActivity {
         courseOffer = findViewById(R.id.home_course_offer_btn);
         createRoutine = findViewById(R.id.home_create_routine_btn);
 
-        teacherName = findViewById(R.id.home_teacher_name_text);
+        teacherFullName = findViewById(R.id.home_teacher_full_name);
+        teacherShortName = findViewById(R.id.home_teacher_short_name);
         teacherNameSubmitBtn = findViewById(R.id.teacher_name_submit_btn);
 
         routineOpenBtn = findViewById(R.id.home_routine_open_btn);
@@ -107,25 +127,43 @@ public class MainActivity extends AppCompatActivity {
         teacherNameSubmitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!teacherName.getText().toString().equals(""))
-                {
-                    reference.child("TeacherShortName").child(teacherName.getText().toString()).child("ShortName").setValue(teacherName.getText().toString()).addOnCompleteListener(new OnCompleteListener<Void>() {
-                        @Override
-                        public void onComplete(@NonNull Task<Void> task) {
-                            if (task.isSuccessful())
-                            {
-                                teacherName.setText("");
-                                teacherName.setHint("Write teacher short name");
-                                teacherName.setHintTextColor(Color.argb(44,255,255,255));
-                            }
 
-                        }
-                    });
+
+
+                if (!teacherFullName.getText().toString().equals(""))
+                {
+                    if (!teacherShortName.getText().toString().equals(""))
+                    {
+                        HashMap<String, Object> map = new HashMap<>();
+                        map.put("FullName",teacherFullName.getText().toString());
+                        map.put("ShortName",teacherShortName.getText().toString());
+                        reference.child("TeacherShortName").child(teacherShortName.getText().toString()).updateChildren(map).addOnCompleteListener(new OnCompleteListener<Void>() {
+                            @Override
+                            public void onComplete(@NonNull Task<Void> task) {
+                                if (task.isSuccessful())
+                                {
+                                    teacherFullName.setText("");
+                                    teacherFullName.setHint("Successfully stored");
+                                    teacherFullName.setHintTextColor(Color.rgb(255,255,255));
+
+                                    teacherShortName.setText("");
+                                    teacherShortName.setHint("Write teacher short name");
+                                    teacherShortName.setHintTextColor(Color.argb(44,255,255,255));
+                                }
+
+                            }
+                        });
+                    }
+                    else
+                    {
+                        teacherShortName.setHint("teacher short name");
+                        teacherShortName.setHintTextColor(Color.RED);
+                    }
                 }
                 else
                 {
-                    teacherName.setHint("White a teacher short name");
-                    teacherName.setHintTextColor(Color.RED);
+                    teacherFullName.setHint("White a teacher short name");
+                    teacherFullName.setHintTextColor(Color.RED);
                 }
             }
         });
@@ -162,4 +200,5 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
 }

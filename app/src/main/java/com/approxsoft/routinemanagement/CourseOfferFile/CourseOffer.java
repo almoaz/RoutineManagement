@@ -51,6 +51,7 @@ public class CourseOffer {
     static AlertDialog.Builder builder;
     static Spinner sa1stAC;
     static Spinner selectTeacher;
+    static ArrayAdapter<String> teacher;
 
 
     public static void courseOffer(Spinner selectCourseOfferCourse, Spinner selectCourserOfferSemester, TextView courseOfferSubmitBtn, RecyclerView semester1stView, RecyclerView semester2ndView, RecyclerView semester3rdView, RecyclerView semester4thView, RecyclerView semester5thView, RecyclerView semester6thView, RecyclerView semester7thView, RecyclerView semester8thView, RecyclerView semester9thView, RecyclerView semester10thView, RecyclerView semester11thView, RecyclerView semester12thView)
@@ -84,7 +85,7 @@ public class CourseOffer {
                 courserReference.child("Department Of CSE And CSIT").child("Semester Course Offer").child(selectCourserOfferSemester.getSelectedItem().toString()).addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        if (snapshot.exists())
+                        if (!snapshot.hasChild(selectCourseOfferCourse.getSelectedItem().toString()))
                         {
 
                             long childLong = snapshot.getChildrenCount();
@@ -237,6 +238,13 @@ public class CourseOffer {
 
     }
 
+    public static void teacherName(ArrayAdapter<String> arrayAdapter) {
+
+        teacher = arrayAdapter;
+
+
+    }
+
     private static void DisplaySemester12thView(String searchBoxInput, RecyclerView semester12thView) {
         Query query = courseOpen.child("12th Semester").orderByChild("CourseName")
                 .startAt(searchBoxInput).endAt(searchBoxInput + "\uf8ff");// haven't implemented a proper list sort yet.
@@ -306,7 +314,7 @@ public class CourseOffer {
                                     else{
                                         courseViewHolder.cancelBtn.setVisibility(View.GONE);
                                         courseViewHolder.addBtn.setVisibility(View.VISIBLE);
-
+                                        courseViewHolder.selectTeacherName.setAdapter(teacher);
                                         courseViewHolder.selectTeacherName.setVisibility(View.VISIBLE);
                                         courseViewHolder.courseTeacherName.setVisibility(View.GONE);
 
@@ -482,7 +490,7 @@ public class CourseOffer {
                                     else{
                                         courseViewHolder.cancelBtn.setVisibility(View.GONE);
                                         courseViewHolder.addBtn.setVisibility(View.VISIBLE);
-
+                                        courseViewHolder.selectTeacherName.setAdapter(teacher);
                                         courseViewHolder.selectTeacherName.setVisibility(View.VISIBLE);
                                         courseViewHolder.courseTeacherName.setVisibility(View.GONE);
 
@@ -658,7 +666,7 @@ public class CourseOffer {
                                     else{
                                         courseViewHolder.cancelBtn.setVisibility(View.GONE);
                                         courseViewHolder.addBtn.setVisibility(View.VISIBLE);
-
+                                        courseViewHolder.selectTeacherName.setAdapter(teacher);
                                         courseViewHolder.selectTeacherName.setVisibility(View.VISIBLE);
                                         courseViewHolder.courseTeacherName.setVisibility(View.GONE);
 
@@ -841,7 +849,7 @@ public class CourseOffer {
                                     else{
                                         courseViewHolder.cancelBtn.setVisibility(View.GONE);
                                         courseViewHolder.addBtn.setVisibility(View.VISIBLE);
-
+                                        courseViewHolder.selectTeacherName.setAdapter(teacher);
                                         courseViewHolder.selectTeacherName.setVisibility(View.VISIBLE);
                                         courseViewHolder.courseTeacherName.setVisibility(View.GONE);
 
@@ -1023,7 +1031,7 @@ public class CourseOffer {
                                     else{
                                         courseViewHolder.cancelBtn.setVisibility(View.GONE);
                                         courseViewHolder.addBtn.setVisibility(View.VISIBLE);
-
+                                        courseViewHolder.selectTeacherName.setAdapter(teacher);
                                         courseViewHolder.selectTeacherName.setVisibility(View.VISIBLE);
                                         courseViewHolder.courseTeacherName.setVisibility(View.GONE);
 
@@ -1206,7 +1214,7 @@ public class CourseOffer {
                                     else{
                                         courseViewHolder.cancelBtn.setVisibility(View.GONE);
                                         courseViewHolder.addBtn.setVisibility(View.VISIBLE);
-
+                                        courseViewHolder.selectTeacherName.setAdapter(teacher);
                                         courseViewHolder.selectTeacherName.setVisibility(View.VISIBLE);
                                         courseViewHolder.courseTeacherName.setVisibility(View.GONE);
 
@@ -1388,7 +1396,7 @@ public class CourseOffer {
                                     else{
                                         courseViewHolder.cancelBtn.setVisibility(View.GONE);
                                         courseViewHolder.addBtn.setVisibility(View.VISIBLE);
-
+                                        courseViewHolder.selectTeacherName.setAdapter(teacher);
                                         courseViewHolder.selectTeacherName.setVisibility(View.VISIBLE);
                                         courseViewHolder.courseTeacherName.setVisibility(View.GONE);
 
@@ -1571,7 +1579,7 @@ public class CourseOffer {
                                     else{
                                         courseViewHolder.cancelBtn.setVisibility(View.GONE);
                                         courseViewHolder.addBtn.setVisibility(View.VISIBLE);
-
+                                        courseViewHolder.selectTeacherName.setAdapter(teacher);
                                         courseViewHolder.selectTeacherName.setVisibility(View.VISIBLE);
                                         courseViewHolder.courseTeacherName.setVisibility(View.GONE);
 
@@ -1754,7 +1762,7 @@ public class CourseOffer {
                                     else{
                                         courseViewHolder.cancelBtn.setVisibility(View.GONE);
                                         courseViewHolder.addBtn.setVisibility(View.VISIBLE);
-
+                                        courseViewHolder.selectTeacherName.setAdapter(teacher);
                                         courseViewHolder.selectTeacherName.setVisibility(View.VISIBLE);
                                         courseViewHolder.courseTeacherName.setVisibility(View.GONE);
 
@@ -1937,7 +1945,7 @@ public class CourseOffer {
                                     else{
                                         courseViewHolder.cancelBtn.setVisibility(View.GONE);
                                         courseViewHolder.addBtn.setVisibility(View.VISIBLE);
-
+                                        courseViewHolder.selectTeacherName.setAdapter(teacher);
                                         courseViewHolder.selectTeacherName.setVisibility(View.VISIBLE);
                                         courseViewHolder.courseTeacherName.setVisibility(View.GONE);
 
@@ -1973,12 +1981,6 @@ public class CourseOffer {
 
                                 }
                             });
-
-
-
-
-
-
 
 
                         }
@@ -2123,6 +2125,7 @@ public class CourseOffer {
                                         courseViewHolder.addBtn.setVisibility(View.VISIBLE);
 
                                         courseViewHolder.selectTeacherName.setVisibility(View.VISIBLE);
+                                        courseViewHolder.selectTeacherName.setAdapter(teacher);
                                         courseViewHolder.courseTeacherName.setVisibility(View.GONE);
 
                                         courseViewHolder.addBtn.setOnClickListener(new View.OnClickListener() {
@@ -2306,6 +2309,7 @@ public class CourseOffer {
                                         courseViewHolder.addBtn.setVisibility(View.VISIBLE);
 
                                         courseViewHolder.selectTeacherName.setVisibility(View.VISIBLE);
+                                        courseViewHolder.selectTeacherName.setAdapter(teacher);
                                         courseViewHolder.courseTeacherName.setVisibility(View.GONE);
 
                                         courseViewHolder.addBtn.setOnClickListener(new View.OnClickListener() {
@@ -2501,6 +2505,8 @@ public class CourseOffer {
             courseTeacherName.setText("TBA");
         }
     }
+
+
 
 
     public static class CourseViewHolder extends RecyclerView.ViewHolder {

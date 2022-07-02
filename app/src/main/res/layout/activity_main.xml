@@ -72,10 +72,20 @@
             android:gravity="center">
 
             <EditText
-                android:id="@+id/home_teacher_name_text"
+                android:id="@+id/home_teacher_full_name"
                 android:layout_width="280dp"
                 android:layout_height="wrap_content"
-                android:hint="Write teacher short name"
+                android:hint="Write teacher full name"
+                android:textColor="@color/White"
+                android:textColorHint="@color/White70"
+                android:background="@drawable/white_box"
+                android:padding="5dp"/>
+
+            <EditText
+                android:id="@+id/home_teacher_short_name"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="teacher short name"
                 android:textColor="@color/White"
                 android:textColorHint="@color/White70"
                 android:background="@drawable/white_box"

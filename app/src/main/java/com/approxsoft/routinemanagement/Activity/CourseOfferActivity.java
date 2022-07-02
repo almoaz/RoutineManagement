@@ -139,15 +139,16 @@ public class CourseOfferActivity extends AppCompatActivity {
 
                 for (DataSnapshot chilsSnapshot : snapshot.getChildren()){
 
-                    String courseData = chilsSnapshot.child("ShortName").getValue(String.class);
-                    course.add("");
+                    String courseData = chilsSnapshot.child("FullName").getValue(String.class);
                     course.add(courseData);
+
 
                 }
                 //ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, nomeConsulta);
                 ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(CourseOfferActivity.this,android.R.layout.simple_spinner_item,course);
 
                 //teacherShortNameSpin.setAdapter(arrayAdapter);
+                CourseOffer.teacherName(arrayAdapter);
 
 
 
